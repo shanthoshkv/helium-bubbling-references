@@ -1,0 +1,24 @@
+# source_id: Baldwin2023_nodal_submerged_helium_injection
+# source: Baldwin, Majumdar & LeClair, AIAA 2023-0847 (NTRS 20220008221), Tables 1 and 2
+# original_data_from: Cho, N. et al., Cryogenics 46(2-3):132-142 (2006) and 46(11):778-793 (2006)
+# apparatus: two MLI/vacuum-insulated LOX Dewars, 90 L (D=0.23 m) and 60 L (D=0.20 m);
+#            single upward-facing diffuser; ullage vented to hold system pressure constant;
+#            axial array of wetted platinum RTDs; constant heat leak assumed uniform over volume.
+# extraction: transcribed from the paper's typeset tables (NOT digitized from a plot) -> exact.
+# note: the paper labels both tables "Table 1"; the second is Table 2 by context.
+# note: dT_sub is defined as T_initial - T_final (paper Eq. 13); NEGATIVE values mean the
+#       liquid WARMED over the test (cases 9 and 10).
+# note: eps_sub = (dT_sub_sim - dT_sub_exp)/dT_sub_exp (paper Eq. 14); positive = model
+#       overpredicted the subcooling.
+# units: volumes L, pressure bar(a), temperature K, heating W, He flow g/s, time s, dT K, eps %
+case,fill_volume_L,ullage_volume_L,system_pressure_bar,T_LOX_initial_K,ambient_heating_W,mdot_He_g_per_s,T_He_injection_K,test_duration_s,dT_sub_exp_K,dT_sub_sim_K,eps_sub_pct
+1,65.0,25.0,1.0,90.8,261,0.38,288,1600,5.4,6.3,16.7
+2,65.0,25.0,1.0,90.8,261,0.25,288,1600,4.7,5.5,17.0
+3,65.1,24.9,1.0,90.9,261,0.16,288,1600,4.3,4.5,4.7
+4,72.0,18.0,3.0,101.8,150,0.82,288,1400,7.8,9.3,19.2
+5,48.0,12.0,3.5,98.9,175,1.55,114,1400,12.0,13.3,10.8
+6,72.0,18.0,1.0,91.2,150,0.21,288,600,4.0,3.9,-2.5
+7,48.0,12.0,1.0,90.2,175,0.14,140,600,4.6,3.4,-26.1
+8,48.0,12.0,1.0,90.2,175,0.46,114,600,6.8,6.6,-2.9
+9,72.0,18.0,3.0,91.0,150,0.74,288,1400,-1.9,-0.7,-63.2
+10,72.0,18.0,3.0,91.4,150,0.49,288,1400,-2.0,-0.6,-70.0

@@ -1,0 +1,887 @@
+% Helium Bubbler & LOX Destratification/Subcooling Suite -- reference database
+% Cite-key == local PDF filename stem == provenance source_id used in app/provenance.py.
+% See MANIFEST.md for acquisition status of each entry.
+
+% ===================== Tier A -- design basis =====================
+
+@article{Xavier2024_flight_performance_helium_bubbler,
+  author  = {Xavier, M. and others},
+  title   = {Flight performance of helium bubbler provided in {LOX} tank pressurisation
+             system of cryogenic propulsion stage},
+  journal = {Cryogenics},
+  year    = {2024},
+  note    = {ScienceDirect PII S0011227524000183. GSLV Cryogenic Upper Stage flight data:
+             12820 kg propellant, LOX 79 K, LH2 20.8 K, 724 s burn, 73.5--80.5 kN.},
+  keywords= {tier-A, design-basis, validation-case-3, paywalled}
+}
+
+@article{LPSC2020_LOX_tank_pressurisation_stage_hot_test,
+  title   = {Analytical and experimental data of liquid oxygen tank pressurisation system
+             during stage hot test},
+  journal = {Applied Thermal Engineering},
+  year    = {2020},
+  note    = {ScienceDirect PII S1359431119381049. C25 stage, GSLV Mk III / LVM3.},
+  keywords= {tier-A, design-basis, validation-case-4, paywalled}
+}
+
+@article{Ramesh2014_subcooling_cryogenic_liquids_helium_bubbling,
+  author  = {Ramesh, P. and others},
+  title   = {Performance Studies on Sub-cooling of Cryogenic Liquids Used for Rocket
+             Propulsion Using Helium Bubbling},
+  journal = {International Journal of Engineering and Technology},
+  volume  = {6},
+  number  = {1},
+  year    = {2014},
+  url     = {https://www.enggjournals.com/ijet/docs/IJET14-06-01-055.pdf},
+  keywords= {tier-A, design-basis, validation-case-5, open-access}
+}
+
+@techreport{Stochl1969_gaseous_hydrogen_requirements_LH2_discharge,
+  author      = {Stochl, R. J. and others},
+  title       = {Gaseous-hydrogen requirements for the discharge of liquid hydrogen from a
+                 3.96-meter (13-ft) diameter spherical tank},
+  institution = {NASA Lewis Research Center},
+  number      = {NASA TN D-5387},
+  year        = {1969},
+  note        = {NTRS 19690022940},
+  keywords    = {tier-A, LH2-penalty, open-access}
+}
+
+@techreport{Stochl1970_gaseous_helium_requirements_LH2_discharge,
+  author      = {Stochl, R. J. and others},
+  title       = {Gaseous-helium requirements for the discharge of liquid hydrogen},
+  institution = {NASA Lewis Research Center},
+  year        = {1970},
+  note        = {NTRS 19710004571},
+  keywords    = {tier-A, LH2-penalty, open-access}
+}
+
+@techreport{Tomsik2000_LOX_densification_unit_X33,
+  author      = {Tomsik, T. M. and Meyer, M. L.},
+  title       = {Liquid Oxygen Propellant Densification Unit Ground Tested With a
+                 Large-Scale Flight-Weight Tank for the {X-33} Reusable Launch Vehicle},
+  institution = {NASA Glenn Research Center},
+  year        = {2000},
+  note        = {NTRS 20050203875. Densification yields 8--10 percent more propellant mass
+                 per unit volume.},
+  keywords    = {tier-A, densification, open-access}
+}
+
+@techreport{Lacovic1970_centaur_LOX_tank_helium_requirements,
+  author      = {Lacovic, Raymond F.},
+  title       = {Comparison of experimental and calculated helium requirements for
+                 pressurization of a {Centaur} liquid oxygen tank},
+  institution = {NASA Lewis Research Center},
+  number      = {E-5539},
+  year        = {1970},
+  note        = {NTRS 19700018327. Primary source for validation case 2; identified from
+                 Baldwin2023 reference [4]. 9.78 m^3 LOX tank, ramp / direct / submerged cases.},
+  keywords    = {tier-A, design-basis, validation-case-2, open-access}
+}
+
+@techreport{Johnson1967_helium_pressurant_LH2_submerged_gas_injection,
+  author      = {Johnson, William R.},
+  title       = {Helium pressurant requirements for liquid-hydrogen expulsion using submerged
+                 gas injection},
+  institution = {NASA},
+  year        = {1967},
+  note        = {NTRS 19670024112. Baldwin2023 reference [5]. Corroborates the LH2
+                 submerged-injection pressurant penalty.},
+  keywords    = {tier-A, LH2-penalty, open-access}
+}
+
+@inproceedings{Boeing2002_LO2_densification_without_rotating_machinery,
+  title     = {{LO2} Propellant Densification Without Use of Rotating Machinery},
+  booktitle = {38th AIAA/ASME/SAE/ASEE Joint Propulsion Conference},
+  number    = {AIAA 2002-3599},
+  year      = {2002},
+  keywords  = {tier-A, densification, energy-balance-crosscheck, open-access}
+}
+
+% ===================== Tier B -- model basis =====================
+
+@inproceedings{Baldwin2023_nodal_submerged_helium_injection,
+  author    = {Baldwin, Michael R. and Majumdar, Alok K. and LeClair, Andre C.},
+  title     = {Nodal Numerical Modeling of Submerged Helium Injection in a Cryogenic
+               Propellant Tank},
+  booktitle = {AIAA SciTech 2023 Forum},
+  number    = {AIAA 2023-0847},
+  year      = {2023},
+  note      = {NTRS 20220008221. GFSSP node network with pseudo-boundary node; predictions
+               within 30 percent of Cho non-drained data and NASA Centaur draining data.},
+  keywords  = {tier-B, PRIMARY, nodal-model, error-budget, open-access}
+}
+
+@misc{NASA2023_single_multi_node_direct_submerged_self_pressurization,
+  title    = {Single and Multi-Node Modeling of Direct, Submerged, and Self-Pressurization
+              of a Cryogenic Propellant Tank Using Nodal Tools},
+  year     = {2023},
+  note     = {NTRS 20230008395. Only the conference abstract (.docx) is held by NTRS.},
+  keywords = {tier-B, mode-comparison, open-partial}
+}
+
+@inproceedings{Majumdar2024_nodal_modeling_feed_pressurization,
+  author    = {Majumdar, Alok K. and LeClair, Andre C.},
+  title     = {Nodal Modeling of Liquid Propellant Feed and Pressurization Systems},
+  booktitle = {JANNAF},
+  year      = {2024},
+  note      = {NTRS 20240003493},
+  keywords  = {tier-B, nodal-model, open-access}
+}
+
+@article{LPSC2014_heat_mass_transfer_submerged_helium_LOX_vessel,
+  title   = {Heat and mass transfer of submerged helium injection in liquid oxygen vessel},
+  journal = {Cryogenics},
+  year    = {2014},
+  note    = {ScienceDirect PII S0011227514001064. Lumped single-bubble model validated
+             against a 6--10 m bubble column with gammametric void-fraction measurement.},
+  keywords= {tier-B, single-bubble-core, paywalled}
+}
+
+@article{Cho2005_helium_injection_cooling_LOX_chamber,
+  author  = {Cho, Namkyung and others},
+  title   = {Investigation of helium injection cooling to liquid oxygen propellant chamber},
+  journal = {Cryogenics},
+  volume  = {46},
+  number  = {2-3},
+  pages   = {132--142},
+  year    = {2006},
+  note    = {ScienceDirect PII S0011227505001487. Published 2006 despite the 2005-style PII;
+             corrected from Baldwin2023 reference [1]. Cite-key kept for filename stability.},
+  keywords= {tier-B, finite-rate, validation-case-1, paywalled}
+}
+
+@article{Cho2006_helium_injection_cooling_LOX_pressurized,
+  author  = {Cho, Namkyung and Kwon, Ohsung and Kim, Youngmog and Jeong, Sangkwon},
+  title   = {Investigation of helium injection cooling to liquid oxygen under pressurized
+             condition},
+  journal = {Cryogenics},
+  volume  = {46},
+  number  = {11},
+  pages   = {778--793},
+  year    = {2006},
+  doi     = {10.1016/j.cryogenics.2006.07.004},
+  note    = {ScienceDirect PII S0011227506001299. Concludes finite-rate heat transfer with
+             instantaneous mass transfer best matches the data. Full PDF obtained 2026-09-12
+             (references/B_model_basis/): Table 1 gives two single-bubble analysis points (6.3 mm
+             orifice, 56/59 mm detached diameter, 0.54/0.55 m/s rise velocity, both film
+             heat-transfer coefficients) -- validation case cho_table1_large_bubble_kinematics.},
+  keywords= {tier-B, finite-rate, validation-case-1, held-locally}
+}
+
+@article{Saha2018_dynamic_lumped_parameter_injection_cooling,
+  author  = {Saha, P. and Sandilya, P.},
+  title   = {A dynamic lumped parameter model of injection cooling system for liquid
+             subcooling},
+  journal = {International Journal of Thermal Sciences},
+  year    = {2018},
+  note    = {ScienceDirect PII S1290072917305252},
+  keywords= {tier-B, lumped-multibubble, paywalled}
+}
+
+@article{Saha2020_performance_analysis_design_injection_cooling,
+  author  = {Saha, P. and Sandilya, P.},
+  title   = {A novel perspective on the performance analysis and design of an injection
+             cooling system for liquid storage},
+  journal = {International Communications in Heat and Mass Transfer},
+  volume  = {117},
+  pages   = {104794},
+  year    = {2020},
+  note    = {First to combine finite-rate heat AND mass transfer with bubble hydrodynamics,
+             and to split evaporation between bubbles and ullage.},
+  keywords= {tier-B, lumped-multibubble, paywalled}
+}
+
+@article{Xie2019_cooling_behaviors_LH2_helium_injection,
+  author  = {Xie, Fushou and Li, Yanzhong and Zhu, Kang and others},
+  title   = {Cooling behaviors of liquid hydrogen by helium gas injection},
+  journal = {Heat and Mass Transfer},
+  volume  = {55},
+  pages   = {2373--2390},
+  year    = {2019},
+  doi     = {10.1007/s00231-019-02587-0},
+  note    = {Two-film theory single-bubble model. LN2 and LCH4 reach triple point by He
+             bubbling; LH2 and LO2 do not approach their freezing points.},
+  keywords= {tier-B, two-film, validation-case-7, paywalled}
+}
+
+@incollection{Schmidt1962_LH2_cooling_helium_gas_injection,
+  author    = {Schmidt, A. F.},
+  title     = {Experimental Investigation of Liquid-Hydrogen Cooling by Helium Gas Injection},
+  booktitle = {Advances in Cryogenic Engineering},
+  volume    = {8},
+  year      = {1962},
+  doi       = {10.1007/978-1-4757-0528-7_65},
+  note      = {National Bureau of Standards, Boulder. Companion chapter: Cooling of
+               Cryogenic Liquids by Gas Injection, doi 10.1007/978-1-4757-0528-7_64. See
+               also Science 148(3678):1721 (1965), doi 10.1126/science.148.3678.1721.},
+  keywords  = {tier-B, classical, energy-balance, paywalled}
+}
+
+@article{Chung2025_cryogenic_helium_subsurface_pressurization,
+  author  = {Chung, J. N. and others},
+  title   = {Cryogenic helium subsurface pressurization in terrestrial and low-gravity:
+             experiments and flow visualization},
+  journal = {npj Microgravity},
+  volume  = {11},
+  pages   = {42},
+  year    = {2025},
+  doi     = {10.1038/s41526-025-00504-w},
+  note    = {PMC12264134. 20.3 cm x 30.5 cm LN2 tank; 0.25 and 1.0 mm orifices; He 170--260 K;
+             0--345 kPa; He flow 2.73e-9 to 8.18e-6 kg/s; 1000 fps visualization; parabolic
+             flight 0.025--0.064 g_e. Cooling effectiveness inversely proportional to gas
+             mass flow rate. Held locally as Europe PMC full-text JATS XML.},
+  keywords= {tier-B, departure-diameter, regime-map, low-g, validation-case-9, open-access}
+}
+
+@article{Begell2025_CFD_subcooling_cryogenic_propellants_helium_bubbling,
+  title   = {{CFD} Studies of Subcooling of Liquid Cryogenic Propellants by Helium Bubbling},
+  journal = {Multiphase Science and Technology},
+  volume  = {37},
+  number  = {3},
+  year    = {2025},
+  keywords= {tier-B, CFD-crosscheck, paywalled}
+}
+
+@article{Zimmerli2010_solubility_pressurant_gases_cryogens,
+  author  = {Zimmerli, G. A. and others},
+  title   = {Empirical correlations for the solubility of pressurant gases in cryogenic
+             propellants},
+  journal = {Cryogenics},
+  year    = {2010},
+  note    = {ScienceDirect PII S0011227510000494; NTRS 20110012022 holds the citation only.
+             He mole-fraction solubility below 0.3 percent at propulsion conditions.},
+  keywords= {tier-B, solubility, paywalled}
+}
+
+% ===================== Tier C -- correlations and properties =====================
+
+@book{Clift1978_bubbles_drops_particles,
+  author    = {Clift, R. and Grace, J. R. and Weber, M. E.},
+  title     = {Bubbles, Drops, and Particles},
+  publisher = {Academic Press},
+  year      = {1978},
+  keywords  = {tier-C, regime-map, not-obtained}
+}
+
+@article{Tomiyama1998_drag_coefficients_single_bubbles,
+  author  = {Tomiyama, A. and Kataoka, I. and Zun, I. and Sakaguchi, T.},
+  title   = {Drag coefficients of single bubbles under normal and micro gravity conditions},
+  journal = {JSME International Journal Series B},
+  volume  = {41},
+  number  = {2},
+  pages   = {472--479},
+  year    = {1998},
+  doi     = {10.1299/jsmeb.41.472},
+  url     = {https://www.jstage.jst.go.jp/article/jsmeb1993/41/2/41_2_472/_pdf/-char/en},
+  note    = {Pure / slightly contaminated / contaminated variants (Eqs. 31-33); valid
+             1e-2 < Eo < 1e3, 1e-3 < Re_b < 1e5. RECLASSIFIED 2026-09-07: J-STAGE hosts the
+             full PDF free -- not paywalled as originally recorded. Full text read and
+             transcribed; now the sourced default drag law below 5 mm
+             (bubble_dynamics.drag_coefficient_tomiyama), replacing the Schiller-Naumann
+             substitute previously shipped there.},
+  keywords= {tier-C, drag, open-access, held-locally, PRIMARY}
+}
+
+@misc{Subramanian_convective_mass_transfer_notes,
+  author = {Subramanian, R. Shankar},
+  title  = {Convective Mass Transfer},
+  note   = {Clarkson University CH330 course notes. Penetration theory and Sherwood
+            correlations for spheres and bubbles.},
+  url    = {https://lin-web.clarkson.edu/projects/subramanian/ch330/notes/Convective%20Mass%20Transfer.pdf},
+  keywords = {tier-C, mass-transfer, open-access}
+}
+
+@article{Fuller1966_new_method_prediction_binary_diffusion,
+  author  = {Fuller, E. N. and Schettler, P. D. and Giddings, J. C.},
+  title   = {A new method for prediction of binary gas-phase diffusion coefficients},
+  journal = {Industrial \& Engineering Chemistry},
+  volume  = {58},
+  number  = {5},
+  pages   = {18--27},
+  year    = {1966},
+  doi     = {10.1021/ie50677a007},
+  keywords= {tier-C, diffusivity, paywalled}
+}
+
+@techreport{Vanoverbeke2010_history_collapse_factor_modeling,
+  author      = {Van Overbeke, T. J.},
+  title       = {A History of Collapse Factor Modeling and Empirical Data for Cryogenic
+                 Propellant Tanks},
+  institution = {NASA},
+  year        = {2010},
+  note        = {NTRS 20100026018. Collapse factor = actual/ideal pressurant mass.},
+  keywords    = {tier-C, collapse-factor, validation-case-8, open-access}
+}
+
+@inproceedings{NASA2019_validated_prediction_collapse_factor,
+  title     = {Validated Prediction of Collapse Factor in Cryogenic Propellant Tanks},
+  booktitle = {55th AIAA/SAE/ASEE Joint Propulsion Conference},
+  year      = {2019},
+  note      = {NTRS 20190030454},
+  keywords  = {tier-C, collapse-factor, validation-case-8, open-access}
+}
+
+@article{Zuber1965_average_volumetric_concentration,
+  author  = {Zuber, N. and Findlay, J. A.},
+  title   = {Average volumetric concentration in two-phase flow systems},
+  journal = {Journal of Heat Transfer},
+  volume  = {87},
+  pages   = {453--468},
+  year    = {1965},
+  doi     = {10.1115/1.3689137},
+  keywords= {tier-C, drift-flux, paywalled}
+}
+
+@article{Luo1996_theoretical_model_drop_bubble_breakup,
+  author  = {Luo, H. and Svendsen, H. F.},
+  title   = {Theoretical model for drop and bubble breakup in turbulent dispersions},
+  journal = {AIChE Journal},
+  volume  = {42},
+  number  = {5},
+  pages   = {1225--1233},
+  year    = {1996},
+  doi     = {10.1002/aic.690420505},
+  keywords= {tier-C, PBM, deferred, paywalled}
+}
+
+@article{Prince1990_bubble_coalescence_breakup,
+  author  = {Prince, M. J. and Blanch, H. W.},
+  title   = {Bubble coalescence and break-up in air-sparged bubble columns},
+  journal = {AIChE Journal},
+  volume  = {36},
+  number  = {10},
+  pages   = {1485--1499},
+  year    = {1990},
+  doi     = {10.1002/aic.690361004},
+  keywords= {tier-C, PBM, deferred, paywalled}
+}
+
+@article{Bell2014_coolprop,
+  author  = {Bell, Ian H. and Wronski, Jorrit and Quoilin, Sylvain and Lemort, Vincent},
+  title   = {Pure and pseudo-pure fluid thermophysical property evaluation and the
+             open-source thermophysical property library {CoolProp}},
+  journal = {Industrial \& Engineering Chemistry Research},
+  volume  = {53},
+  number  = {6},
+  pages   = {2498--2508},
+  year    = {2014},
+  doi     = {10.1021/ie4033999},
+  keywords= {tier-C, properties, open-access}
+}
+
+@techreport{Balasubramaniam2006_two_phase_flow_reduced_gravity,
+  author      = {Balasubramaniam, R. and others},
+  title       = {Two Phase Flow Modeling: Summary of Flow Regimes and Pressure Drop
+                 Correlations in Reduced and Partial Gravity},
+  institution = {NASA},
+  number      = {NASA/CR-2006-214085},
+  year        = {2006},
+  note        = {NTRS 20060008906},
+  keywords    = {tier-C, low-g, open-access}
+}
+
+% ===================== Tier D -- destratification =====================
+
+@article{IJHE2022_thermal_destratification_continuous_bubbling,
+  author  = {Sarath, S. R. and Jayakumar, J. S.},
+  title   = {Thermal destratification of cryogenic liquid storage tanks by continuous
+             bubbling of gases},
+  journal = {International Journal of Hydrogen Energy},
+  volume  = {47},
+  number  = {81},
+  pages   = {34504--34532},
+  year    = {2022},
+  doi     = {10.1016/j.ijhydene.2022.06.318},
+  note    = {CORRECTED 2026-09-07: this codebase previously misattributed this to "Ansari et al."
+             in three places (this entry, destratification_model.py, destratification.py) --
+             confirmed via Crossref/Unpaywall the real authors are Sarath & Jayakumar. Defines the
+             destratification index Id from OpenFOAM VOF with interface compression. PRIMARY
+             source for the Id definition and coefficient tables. Confirmed closed via direct
+             Unpaywall API query, no repository copy indexed -- not yet obtained; do not fabricate
+             the formula. Likely a chapter of Sarath Raj's PhD thesis "Bubble Dynamics and Thermal
+             Destratification in Aerated Liquid Storage Tanks" (Amrita Vishwa Vidyapeetham),
+             CC-BY-NC on Shodhganga: https://shodhganga.inflibnet.ac.in/handle/10603/440187 --
+             blocked at the network level for automated fetch (ECONNREFUSED on the whole domain,
+             not a paywall); worth a manual browser attempt, highest-value single lead for the Id
+             gap.},
+  keywords= {tier-D, destratification-index, PRIMARY, paywalled, corrected-citation}
+}
+
+@article{CSITE2022_bubble_dynamics_thermal_destratification,
+  author  = {Sarath, S. R. and Jayakumar, J. S.},
+  title   = {Analysis of bubble dynamics and thermal destratification induced by gas bubbles
+             in cylindrical liquid storage tanks},
+  journal = {Thermal Science and Engineering Progress},
+  volume  = {36},
+  pages   = {101481},
+  year    = {2022},
+  doi     = {10.1016/j.tsep.2022.101481},
+  note    = {CORRECTED 2026-09-07: this codebase previously had the wrong journal (Case Studies
+             in Thermal Engineering) and PII, which is why the "gold OA, retry" note never found
+             it -- confirmed via Crossref/Unpaywall this is Thermal Science and Engineering
+             Progress. Same author pair as IJHE2022 above; likely another chapter of the same
+             Sarath Raj PhD thesis. Confirmed closed via Unpaywall, no repository copy indexed.},
+  keywords= {tier-D, destratification-index, paywalled, corrected-citation}
+}
+
+@article{KJChE2021_deformation_index_bubbling_stratified_tank,
+  author  = {Sarath, S. R. and Jayakumar, J. S.},
+  title   = {Deformation index for gas-liquid interface deformation in a bubbling stratified
+             liquid storage tank},
+  journal = {Korean Journal of Chemical Engineering},
+  year    = {2021},
+  doi     = {10.1007/s11814-021-0747-y},
+  note    = {Found 2026-09-07 while tracing the IJHE2022/CSITE2022 author group -- same two
+             authors, likely a precursor to the destratification index Id. Confirmed closed via
+             Unpaywall, no repository copy indexed.},
+  keywords= {tier-D, destratification-index, paywalled}
+}
+
+@article{JES2024_Tsd_decay_coefficient_bubbling,
+  author  = {Sarath, S. R. and Jayakumar, J. S.},
+  title   = {Thermal stratification decay coefficient (Tsd) in a bubbling cryogenic tank},
+  journal = {Journal of Energy Storage},
+  year    = {2024},
+  doi     = {10.1016/j.est.2024.113848},
+  note    = {Found 2026-09-07 -- same author group revisiting the Ultrasonics2013 Tsd decay
+             coefficient below. Confirmed closed via Unpaywall, no repository copy indexed.},
+  keywords= {tier-D, Tsd, paywalled}
+}
+
+@article{Ultrasonics2013_mechanistic_modeling_destratification,
+  author  = {Jagannathan, S. and Mohanan, K. R. and Nagarajan, R.},
+  title   = {Mechanistic modeling of destratification in cryogenic storage tanks using
+             ultrasonics},
+  journal = {Ultrasonics},
+  doi     = {10.1016/j.ultras.2013.05.009},
+  year    = {2013},
+  note    = {ScienceDirect PII S0041624X13001674. Thermal stratification decay coefficient Tsd.
+             Authors confirmed 2026-09-07 via Crossref (refs.bib previously had none listed).
+             Confirmed closed via Unpaywall, no repository copy indexed.},
+  keywords= {tier-D, Tsd, paywalled}
+}
+
+@incollection{Sutheesh2023_multispecies_bubbling_stratification,
+  author    = {Sutheesh, P. M. and Joseph, Jeswin and Chollackal, Alex and Peter, J.
+               and Agarwal, D. K.},
+  title     = {Experimental Investigation of Thermal Stratification in Cryogenic Tank
+               Subjected to Multi-Species Bubbling},
+  booktitle = {Proceedings of FMFP 2021, Lecture Notes in Mechanical Engineering},
+  publisher = {Springer Singapore},
+  year      = {2023},
+  doi       = {10.1007/978-981-19-6970-6_51},
+  note      = {90 L cylindrical tank; water-GN2 and LN2-GHe; destratification time vs.
+               bubbling flow rate. Also J. Therm. Anal. Calorim. 148:2949--2959 (2023).},
+  keywords  = {tier-D, validation-case-6, paywalled}
+}
+
+@article{Khurana_ribbed_LH2_tank_stratification,
+  author  = {Khurana, T. K. and others},
+  title   = {Thermal stratification in ribbed liquid hydrogen storage tanks},
+  note    = {Ra 1.2e12--6e16; about 30 percent lower destratification for ribbed tanks.},
+  keywords= {tier-D, non-goal, paywalled}
+}
+
+@article{Cryogenics2021_1D_vertical_plate_stratification_double_wall,
+  title   = {Mathematical modeling of thermal stratification in a double wall cryogenic
+             propellant tank with different insulations using one-dimensional flow over
+             vertical plate approximation},
+  journal = {Cryogenics},
+  year    = {2021},
+  note    = {ScienceDirect PII S001122752100151X},
+  keywords= {tier-D, no-bubbler-baseline, paywalled}
+}
+
+@article{Cryogenics1994_mixing_cooling_modelling_rocket_tanks,
+  title   = {Mixing and cooling modelling of cryogenic fuel in liquid fuel rocket engine tanks},
+  year    = {1994},
+  note    = {ScienceDirect PII S036031999490099X},
+  keywords= {tier-D, non-goal, paywalled}
+}
+
+@article{Raibole2025_review_thermal_stratification_cryogenic_tanks,
+  author  = {Raibole, K. V. and Sonawwanay, P. D.},
+  title   = {Factors affecting and methods of reducing thermal stratification in cryogenic
+             storage tanks of launch vehicles: Review article},
+  journal = {Journal of Thermal Engineering},
+  volume  = {11},
+  number  = {5},
+  pages   = {1585--1599},
+  year    = {2025},
+  doi     = {10.14744/thermal.0000994},
+  note    = {Open-access review. Reports ribbed tanks reduce stratification about 30 percent
+             and gas bubbling destratifies in 25--35 s. SECONDARY source only -- use to bound
+             the correlator while the primary Id sources are unavailable.},
+  keywords= {tier-D, secondary-source, open-access}
+}
+
+% ===================== Tier E -- tools, manuals, baselines =====================
+
+@techreport{Majumdar2016_GFSSP_v6_user_manual,
+  author      = {Majumdar, Alok K. and LeClair, Andre C. and Moore, Ric and Schallhorn, Paul},
+  title       = {Generalized Fluid System Simulation Program, Version 6.0},
+  institution = {NASA Marshall Space Flight Center},
+  number      = {NASA/TP-2016-218218},
+  year        = {2016},
+  note        = {Finite-volume node/branch/conductor formulation; hybrid Newton-Raphson and
+                 successive-substitution solver.},
+  keywords    = {tier-E, solver-architecture, open-access}
+}
+
+@techreport{NASA_GFSSP_v7_supplement_user_manual,
+  title       = {Generalized Fluid System Simulation Program, Version 7 -- Supplement to
+                 User Manual},
+  institution = {NASA Marshall Space Flight Center},
+  keywords    = {tier-E, solver-architecture, open-access}
+}
+
+@techreport{Majumdar2011_GFSSP_v6_general_purpose_thermofluid,
+  author      = {Majumdar, Alok K.},
+  title       = {Generalized Fluid System Simulation Program ({GFSSP}) Version 6 --
+                 General Purpose Thermo-Fluid Network Analysis Software},
+  institution = {NASA Marshall Space Flight Center},
+  year        = {2011},
+  note        = {NTRS 20110015752},
+  keywords    = {tier-E, solver-architecture, open-access}
+}
+
+@techreport{NASA2017_self_pressurization_flightweight_LH2_tank,
+  title       = {Self-Pressurization of a Flightweight, Liquid Hydrogen Tank},
+  institution = {NASA},
+  year        = {2017},
+  note        = {NTRS 20170001292},
+  keywords    = {tier-E, self-pressurization-baseline, open-access}
+}
+
+@misc{ASTM_oxygen_service_standards,
+  title = {Oxygen service standards: {ASTM} G63, G88, G93, G94; {NASA-STD-6001};
+           {CGA} G-4.1},
+  note  = {Cited only, not redistributed. Basis for the oxygen-service warning block,
+           master prompt section 7.6.},
+  keywords = {tier-E, safety, cited-only}
+}
+
+@book{Ring1964_rocket_propellant_pressurization_systems,
+  editor    = {Ring, Elliot},
+  title     = {Rocket Propellant and Pressurization Systems},
+  publisher = {Prentice-Hall},
+  address   = {Englewood Cliffs, NJ},
+  year      = {1964},
+  note      = {Baldwin2023 reference [6]. Source of the flat-plate natural-convection
+               ullage-to-wall and ullage-to-liquid heat transfer correlations used by GFSSP.},
+  keywords  = {tier-C, ullage-heat-transfer, not-obtained}
+}
+
+@article{Neufeld1972_collision_integrals,
+  author  = {Neufeld, Philip D. and Janzen, A. R. and Aziz, R. A.},
+  title   = {Empirical equations to calculate 16 of the transport collision integrals
+             Omega(l,s)* for the Lennard-Jones (12-6) potential},
+  journal = {The Journal of Chemical Physics},
+  volume  = {57},
+  number  = {3},
+  pages   = {1100--1102},
+  year    = {1972},
+  doi     = {10.1063/1.1678363},
+  note    = {Source of the Omega_D collision-integral correlation used with Chapman-Enskog.
+             Form reproduced in Reid, Prausnitz and Poling 4th ed.},
+  keywords= {tier-C, diffusivity, secondary-source}
+}
+
+@book{Reid1987_properties_of_gases_and_liquids,
+  author    = {Reid, Robert C. and Prausnitz, John M. and Poling, Bruce E.},
+  title     = {The Properties of Gases and Liquids},
+  edition   = {4},
+  publisher = {McGraw-Hill},
+  address   = {New York},
+  year      = {1987},
+  note      = {Standard tabulation of Fuller atomic diffusion volumes and Lennard-Jones (6-12)
+               parameters used in fluid_properties.py. Cited by Ramesh2014 as its ref [10].},
+  keywords  = {tier-C, properties, book, not-obtained}
+}
+
+@article{Badam2007_regimes_bubble_formation_submerged_orifices,
+  author  = {Badam, V. K. and Buwa, V. and Durst, F.},
+  title   = {Experimental Investigations of Regimes of Bubble Formation on Submerged Orifices
+             Under Constant Flow Condition},
+  journal = {The Canadian Journal of Chemical Engineering},
+  volume  = {85},
+  number  = {3},
+  pages   = {257--267},
+  year    = {2007},
+  note    = {Institute of Fluid Mechanics, Erlangen. Table 1 tabulates five departure-volume
+             correlations; Table 3 gives measured critical gas velocities for regime transitions
+             on stainless, Teflon and acrylic plates at 2, 4 and 6 mm orifices; Figs. 10-12 are
+             Froude-Bond regime maps over Bo 0.55-4.9, Fr 0.034-5738. Reports that Jamialahmadi
+             et al. (2001) outperforms the earlier correlations, that no model accounts for
+             surface wetting, and that for Bo ~ 0.083 period-1 passes directly to chaotic.},
+  keywords= {tier-C, departure-diameter, regime-map, PRIMARY, held-locally}
+}
+
+@article{Das2011_formation_bubbles_submerged_orifices,
+  author  = {Das, A. K. and Das, P. K. and Saha, P.},
+  title   = {Formation of bubbles at submerged orifices -- Experimental investigation and
+             theoretical prediction},
+  journal = {Experimental Thermal and Fluid Science},
+  volume  = {35},
+  number  = {4},
+  pages   = {618--627},
+  year    = {2011},
+  doi     = {10.1016/j.expthermflusci.2010.11.015},
+  note    = {IIT Kharagpur. Conductivity-probe bubble counting. Table 1 gives jetting onset
+             against orifice diameter AND pool height. Names two limitations of Jamialahmadi:
+             it ignores liquid height above the orifice and assumes a spherical bubble.
+             Weeping measured at 0.02 mL/s for 1 mm and 1.0 mL/s for 3 mm.},
+  keywords= {tier-C, departure-diameter, jetting, weeping, held-locally}
+}
+
+@inproceedings{Jung2015_helium_injection_modeling_densification,
+  author    = {Jung, Youngsuk and Seo, Mansu and Kim, Youngcheol and Jeong, Sangkwon},
+  title     = {Helium injection modeling for cryogenic propellant densification},
+  booktitle = {2015 World Congress on Aeronautics, Nano, Bio, Robotics and Energy (ANBRE15)},
+  address   = {Incheon, Korea},
+  year      = {2015},
+  note      = {KAIST and KARI (KSLV-II). Eq. 5 defines the evaporation intensity
+               beta_vap = mdot_vapour/mdot_He from thermodynamic equilibrium, which is Baldwin
+               Eq. 6 written in mole fractions -- an independent third derivation. Eq. 4 is the
+               liquid energy balance and treats the injected helium's sensible heat as NET
+               HEATING, siding with Baldwin over Ramesh. Figs. 4-6 are a digitisable validation
+               case: 11.5 m3 tank, 10 m3 LOX, 0.02 kg/s He, 1.2-2 bar, 90-288 K helium.},
+  keywords  = {tier-B, equilibrium-closure, validation, held-locally}
+}
+
+@article{Tsuge1978_bubble_formation_pressure_fluctuations,
+  author  = {Tsuge, H. and Hibino, Shin-ichi},
+  title   = {Bubble formation from a submerged single orifice accompanied by pressure
+             fluctuations in gas chamber},
+  journal = {Journal of Chemical Engineering of Japan},
+  year    = {1978},
+  note    = {Chamber-volume coupling. Held locally; not yet consumed by any module.},
+  keywords= {tier-C, departure-diameter, held-locally, chamber-volume-limitation, held-locally, read}
+}
+
+@article{DiBari2013_gas_injected_bubble_growth,
+  author  = {Di Bari, Sergio and Robinson, Anthony J.},
+  title   = {Experimental study of gas injected bubble growth from submerged orifices},
+  journal = {Experimental Thermal and Fluid Science},
+  volume  = {44},
+  pages   = {124--137},
+  year    = {2013},
+  note    = {Trinity College Dublin. Held locally; not yet consumed by any module.},
+  keywords= {tier-C, departure-diameter, held-locally, quasi-static-departure, PRIMARY, held-locally, read}
+}
+
+@inproceedings{Ludwig2012_cryogenic_tank_pressurization_ground_experiments,
+  author    = {Ludwig, C. and Dreyer, M. E.},
+  title     = {Analyses of Cryogenic Propellant Tank Pressurization based upon Ground Experiments},
+  booktitle = {AIAA SPACE 2012 Conference and Exposition},
+  address   = {Pasadena, California},
+  year      = {2012},
+  note      = {DLR Institute of Space Systems and ZARM Bremen. Held locally; a candidate
+               additional validation case for the L2 ullage model, not yet consumed.},
+  keywords  = {tier-A, validation-candidate, held-locally, direct-injection, validation-case-12, held-locally, read}
+}
+
+@inproceedings{Daigle2014_temperature_stratification_cryogenic_fuel_tank,
+  author    = {Daigle, Matthew J. and Smelyanskiy, Vadim N. and Boschee, Jacob and Foygel, Michael},
+  title     = {Temperature Stratification in a Cryogenic Fuel Tank},
+  booktitle = {AIAA SciTech Forum},
+  year      = {2014},
+  note      = {NASA Ames Research Center / South Dakota School of Mines. Open access via
+               NASA NTRS (20140004902). Reduced dynamical model of LH2 tank stratification;
+               its Eqs. 9-14 reproduce the Churchill-Chu vertical-plate free-convection
+               correlation (see Churchill1975), which is what Tab 6's stratification baseline
+               actually runs. Its own transient multi-layer results (Figs. 6-14) are the trend
+               check for that baseline, not a digitized point-by-point validation case.},
+  keywords  = {tier-A, held-locally, open-access, stratification, validation-case-13}
+}
+
+@article{Churchill1975_laminar_free_convection_vertical_plate,
+  author  = {Churchill, Stuart W. and Chu, Humbert H. S.},
+  title   = {Correlating equations for laminar and turbulent free convection from a vertical plate},
+  journal = {International Journal of Heat and Mass Transfer},
+  volume  = {18},
+  number  = {11},
+  pages   = {1323--1329},
+  year    = {1975},
+  doi     = {10.1016/0017-9310(75)90243-4},
+  note    = {Textbook correlation, no fitted constants for this tool. Not held locally --
+             reproduced via Daigle2014's Eqs. 9-10, which is held.},
+  keywords= {tier-C, natural-convection, paywalled, secondary-via-Daigle2014}
+}
+
+@article{Xavier2017_thermal_stratification_LH2_tank_ISRO_ground_test,
+  author  = {Xavier, M. and Edwin Raj, R. and Narayanan, V.},
+  title   = {Thermal stratification in {LH2} tank of cryogenic propulsion stage tested in {ISRO} facility},
+  journal = {IOP Conf. Ser.: Mater. Sci. Eng.},
+  volume  = {171},
+  pages   = {012063},
+  year    = {2017},
+  doi     = {10.1088/1757-899X/171/1/012063},
+  note    = {Open access. ISRO/LPSC ground-test stage (GSLV Mk II Cryogenic Upper Stage
+             qualification hot test): real measured stratified-layer thickness at 3 times
+             (Table 1) and the measured within-layer temperature gradient (Fig. 6) for a
+             30 m3 LH2 tank under 200 W/m2 wall heat flux and 200 K/0.2 MPa H2 pressurant
+             gas. Its own model is semi-empirical (h_liq back-calculated from the test's own
+             wall/liquid temperatures, not a pure correlation), and the paper does not state
+             the tank radius/height needed to run this tool's baseline forward against
+             Table 1 -- so this stays a trend/shape check (Delta(t) growth direction, and the
+             erfc conduction profile shape matching Fig. 6), not a digitized point-by-point
+             validation case. Its Eq. 9's mass-balance ODE for Delta(t) and Eq. 14-15's
+             semi-infinite-conduction solution for the within-layer temperature profile are
+             what this tool's baseline actually runs.},
+  keywords= {tier-A, held-locally, open-access, stratification, validation-case-14}
+}
+
+@article{Ling2025_surfactant_bubble_formation_superhydrophobic_surface,
+  author  = {Ling, H. and Ready, J. and O'Coin, D.},
+  title   = {Effect of Surfactant on Bubble Formation on Superhydrophobic Surface in
+             Quasi-Static Regime},
+  journal = {Biomimetics (Basel)},
+  volume  = {10},
+  number  = {6},
+  pages   = {382},
+  year    = {2025},
+  doi     = {10.3390/biomimetics10060382},
+  note    = {PMC12191381, open access. Air into DI water, 0.5 mm orifice on a superhydrophobic
+             surface, room temp, Q < 30 mL/min (quasi-static, flow-independent). Clean-baseline
+             (no surfactant) row: measured departure volume 0.44 mL, measured max bubble base
+             radius (d_detach/2) 8.2 mm -- the bubble base spreads far past the orifice bore on
+             this surface, giving a MEASURED (not fitted) d_detach input for
+             departure_volume_quasi_static, distinct from Di Bari/Badam which both pin to the
+             orifice bore.},
+  keywords= {tier-C, departure-diameter, quasi-static-departure, d_detach, held-locally, open-access}
+}
+
+@techreport{NASA1972_centaur_5C_pressurized_feed_system_tests,
+  author      = {NASA Lewis Research Center},
+  title       = {Centaur Space Vehicle Pressurized Propellant Feed System Tests},
+  institution = {NASA Lewis Research Center},
+  number      = {NASA TN D-6876},
+  year        = {1972},
+  note        = {NTRS 19720025206, open access. Centaur tank 5C, 11.35 m3 LOX tank, 304.8 cm dia,
+             Plum Brook B-2 facility, Oct 1969-June 1970, 27 tests. Tests 5a (direct/standpipe)
+             and 6a (submerged/bubbler, 320 x 0.117 cm holes at 45 deg) are the report's own
+             deliberate paired comparison, both 205 s steady-state firings -- now a RUNNABLE
+             validation case (td6876_centaur_5c, added 2026-09-07): solve_tank matches direct
+             mode to -7% but under-predicts submerged/bubbler mode by 78%, a genuine gap Baldwin's
+             x3 HTC multiplier (fit only to direct-mode Centaur data) does not cover. Full
+             apparatus (Tables III-I to III-V, Figs. II-7/II-8 pressure-time traces, Fig III-1
+             heating-rate chart) read in full; T_he_inlet/q_leak for this test pair are not
+             explicitly stated (only a heating-rate-vs-vacuum-pressure chart) and were fixed at
+             plausible values, checked insensitive over 260-298 K / 0-5000 W.},
+  keywords    = {tier-A, validation-case-15, open-access, direct-vs-submerged, held-locally}
+}
+
+@article{Mohseni2021_mechanistic_model_bubble_formation_microscale_orifices,
+  author  = {Mohseni, E. and Bauermann Lang, G. and Reinecke, S. F. and Hampel, U.},
+  title   = {A Mechanistic Model for Bubble Formation from Microscale Orifices under
+             Constant Gas Flow Conditions},
+  journal = {ACS Engineering Au},
+  volume  = {1},
+  pages   = {96--104},
+  year    = {2021},
+  doi     = {10.1021/acsengineeringau.1c00004},
+  note    = {Open access (CC-BY), user-supplied 2026-09-07 after the automated fetch this tool
+             tried earlier hit an HTTP 403. Air/water, 5 orifices 30-193 um dia, CGFC, validated
+             against the authors' own high-speed imaging (avg/max deviation 3.3%/10%). Read in
+             full: Table 3 gives apparatus/flow-range metadata (d_or, Q, Q_c, Eo, We) per orifice,
+             but the measured departure diameters themselves are published ONLY as a scatter plot
+             (Fig. 4), not a numeric table -- digitising points off a chart to fabricate a scored
+             case would not be a real replication, so NO validation case is added from this
+             source. The model itself (Eqs. 1-21, growth/radial-expansion/detachment force
+             balance with a capillary-neck instability criterion) is a real candidate for a future
+             DepartureModel variant if the added complexity is ever worth it -- not attempted here.},
+  keywords= {tier-C, departure-diameter, micro-orifice, open-access, held-locally, no-table-not-scored}
+}
+
+@article{Khan2024_controlling_microbubble_formation_microfluidic_devices,
+  author  = {Khan, A. H. and Ganguli, A. and Edirisinghe, M. and Dalvi, S. V.},
+  title   = {Controlling Microbubble Formation in Microfluidic Devices: Advancements in
+             Experimental, Theoretical, and Numerical Strategies},
+  journal = {Applied Physics Reviews},
+  year    = {2024},
+  doi     = {10.1063/5.0250980},
+  note    = {Accepted-manuscript PDF, user-supplied 2026-09-07 (arrived alongside Mohseni2021).
+             A review article, not a primary data source -- surveys existing microbubble-formation
+             models and scaling laws (largely the same correlation family already in
+             bubble_formation.py) but reports no new digitisable dataset of its own. No validation
+             case added; kept as a secondary cross-reference on the departure-diameter literature.},
+  keywords= {tier-C, departure-diameter, review, secondary-source, held-locally, no-new-data}
+}
+
+@article{Zhang2025_common_bulkhead_LOX_LCH4_helium_pressurization,
+  author  = {Zhang, Wujie and Zhang, Hao and Huang, Yonghua and Wang, Bin and Xu, Anyi
+             and Li, Peng and Sun, Peijie and Miao, Ruijiao},
+  title   = {Improving storage performance of a cryogenic common bulkhead tank filled with
+             {LOX} and {LCH4} by helium pressurization},
+  journal = {International Journal of Heat and Mass Transfer},
+  volume  = {239},
+  pages   = {126565},
+  year    = {2025},
+  note    = {Held locally; multi-fluid common-bulkhead case, not yet consumed.},
+  keywords= {tier-A, validation-candidate, held-locally, out-of-scope-confirmed, held-locally, read}
+}
+
+@article{RanzMarshall1952_evaporation_from_drops,
+  author  = {Ranz, W. E. and Marshall, W. R.},
+  title   = {Evaporation from drops, Parts I and II},
+  journal = {Chemical Engineering Progress},
+  volume  = {48},
+  number  = {3},
+  pages   = {141--146, 173--180},
+  year    = {1952},
+  note    = {Primary source for the Nu = 2 + 0.6 Re^0.5 Pr^(1/3) / Sh = 2 + 0.6 Re^0.5 Sc^(1/3)
+             correlations used throughout bubble_rise.py; upgrades the prior secondary citation
+             via Subramanian's course notes.},
+  keywords= {tier-C, heat-mass-transfer, classic, cited-only}
+}
+
+@article{Higbie1935_penetration_theory,
+  author  = {Higbie, R.},
+  title   = {The rate of absorption of a pure gas into a still liquid during short periods of
+             exposure},
+  journal = {Transactions of the AIChE},
+  volume  = {31},
+  pages   = {365--389},
+  year    = {1935},
+  note    = {Primary source for the penetration-theory liquid-film coefficient used in
+             bubble_rise.liquid_film_coefficient_penetration; upgrades the prior secondary
+             citation via Subramanian's course notes.},
+  keywords= {tier-C, heat-mass-transfer, classic, cited-only}
+}
+
+@techreport{Hasan1991_MHTB_self_pressurization_low_heat_flux,
+  author      = {Hasan, M. M. and Lin, C. S. and Van Dresar, N. T.},
+  title       = {Self-pressurization of a flightweight liquid hydrogen storage tank subjected
+                 to low heat flux},
+  institution = {NASA Lewis Research Center},
+  year        = {1991},
+  note        = {NASA TM 103804. K-site facility, 4.95 m3 flight-weight LH2 tank ground test;
+                 original source of the self-pressurization pressure/temperature histories
+                 reproduced in Yang2022's Fig. 11.},
+  keywords    = {tier-A, tank-validation, self-pressurization, open-access}
+}
+
+@techreport{VanDresar1992_MHTB_fill_level_effects,
+  author      = {Van Dresar, N. T. and Lin, C. S. and Hasan, M. M.},
+  title       = {Self-pressurization of a flightweight liquid hydrogen tank: effects of fill
+                 level at low wall heat flux},
+  institution = {NASA Lewis Research Center},
+  year        = {1992},
+  note        = {NASA TM 105411. Companion K-site test report, 29/49/83\% fill levels at
+                 2.0 and 3.5 W/m2 wall heat flux.},
+  keywords    = {tier-A, tank-validation, self-pressurization, open-access}
+}
+
+@inproceedings{Yang2022_ksite_LH2_self_pressurization_validation,
+  author    = {Yang, Hong Q. and Patel, Chintan S. and Williams, Brandon R.},
+  title     = {Validation of Cryogenic Propellant Tank Self-Pressurization},
+  booktitle = {NASA Marshall Space Flight Center / CFD Modeling Portfolio report},
+  year      = {2022},
+  note      = {NTRS 20220018548. Digitises the K-site experimental pressure histories
+               (Hasan1991, VanDresar1992) in its Fig. 11 -- the source this codebase's
+               ksite_lh2_self_pressurization case digitises numbers from, since the primary
+               NASA TMs were not separately obtained.},
+  keywords  = {tier-A, tank-validation, self-pressurization, open-access}
+}

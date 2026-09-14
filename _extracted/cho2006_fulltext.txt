@@ -1,0 +1,1235 @@
+
+
+===== PAGE 1 =====
+
+Cryogenics46(2006)778–793
+www.elsevier.com/locate/cryogenics
+Investigation of helium injection cooling to liquid oxygen
+under pressurized condition
+Namkyung Cho a,*, Ohsung Kwon a, Youngmog Kim a, Sangkwon Jeong b,1
+aPropulsionControlDepartment,KoreaAerospaceResearchInstitute,45,Oun-Dong,Yuseong-gu,Daejeon305-333,RepublicofKorea
+bCryogenicEngineeringLaboratory,DepartmentofMechanicalEngineering,KoreaAdvancedInstituteofScienceandTechnology,
+Guseong-dong,Yuseong-gu,Daejeon305-701,RepublicofKorea
+Received25March2006;receivedinrevisedform15June2006;accepted25July2006
+Abstract
+Sub-coolingofcryogenicpropellantbyheliuminjectionisoneofthemosteffectivemethodsforsuppressingbulkboilingandkeeping
+sub-cooledliquidoxygenbeforerocketlaunch.Comparedwiththeheliuminjectioncoolingunderatmosphericcondition,heliuminjec-
+tion cooling under pressurized condition has advantage that it can greatly reduce re-warming time of the sub-cooled liquid oxygen.
+Heliuminjectioncoolingunderpressurizedconditionischaracterizedbycoolingofinitiallysub-cooledcryogenicliquid,whichissignif-
+icantlydifferentfromthatoftheatmosphericconditionwhereliquidoxygenusuallyexistsatsaturatedcondition.Inthispaper,wedis-
+cuss the characteristics of helium injection cooling under pressurized condition, with the associated physical understanding of the
+process.Experimentalresultsarepresentedalongthesimulationsofvariouslycombinedsystemparametersbasedonthefiniteheattrans-
+ferandinstantaneousdiffusionmasstransfermodel.Anon-dimensionalparameterforidentifyingthecoolingregimeisconceived.The
+critical valuesof the non-dimensional parameters and injected heliumtemperatures arealso estimated.
+(cid:2)2006Elsevier Ltd. Allrights reserved.
+Keywords: Heliuminjection(C);Sub-cooling(C);Diffusion(C);Liquidoxygen(B)
+1. Introduction rium[3].Schmidthasachievedsub-coolingofliquidhydro-
+gen by helium injection [4]. Cleary et al. have sub-cooled
+Sub-cooling of cryogenic propellant by helium injection liquidoxygenbyinjectedheliumwithvariousinjectionflow
+is known to be one of the most effective methods for rates as a part of liquid oxygen conditioning research [5].
+suppressing bulk boiling and keeping liquid oxygen sub- Recently, Cho et al. have applied finite rate heat transfer
+cooled before rocket launch. By the helium gas injected and instantaneous mass transfer model considering the
+through liquid oxygen, large surface area for evaporation limitationofheattransferinabubblingsystem[6].
+anddiffusionofoxygenintobubblescanberealized.Asim- The previous studies, however, were all based on tests
+ilarconceptisalsoappliedforgroundpre-pressurizationfor and analysis that were performed under atmospheric
+upperstages[1,2].Overthepastfewdecades,severalstudies conditions.Forpracticalapplication,itishelpfultounder-
+have been done on this subject. Larsen and Clark have stand the characteristics of helium injection cooling under
+shown thepossiblemaximum sub-coolingbyassumingthe pressurized condition which is observable in pre-pressuri-
+injectedheliumandtheoxygenvaportobeinphaseequilib- zation period of rocket. Liquid rocket launch scenario
+usually includes several stages such as chilling tank, filling
+cryogenic propellant, holding, pre-pressurization, and
+* Correspondingauthor.Tel.:+82428602336;fax:+82428602698.
+firing. Helium injection to cryogenic propellant has been
+E-mail addresses: cho@kari.re.kr (N. Cho), oskwon@kari.re.kr
+usuallyappliedpriortopre-pressurization.Forthatlaunch
+(O.Kwon),ymkim@kari.re.kr(Y.Kim),skjeong@kaist.ac.kr(S.Jeong).
+1 Fax:+82428693210. scenario, the sub-cooled cryogenic propellant may be
+0011-2275/$-seefrontmatter (cid:2)2006ElsevierLtd.Allrightsreserved.
+doi:10.1016/j.cryogenics.2006.07.004
+
+===== PAGE 2 =====
+
+N.Choetal./Cryogenics46(2006)778–793 779
+Nomenclature
+A net bubble surface area (m2) Q_ heattransferratetoliquidoxygenthroughtank
+s amb
+A detached bubble surface area in spherical form wall from ambient and ullage region (W)
+b,d
+(m2) Q_ heat transfer rate from gas in bubble to liquid
+gl
+C heat capacity of liquid oxygen (kJ/kgK) oxygen (W)
+p,LOX
+D diameter (mm) R universal gas constant (8.314kJ/kmolK)
+D average bubble diameter (mm) Ra Rayleigh number
+b
+D detached bubble diameter in spherical form r bubble radius (mm)
+b,d b
+(mm) t time (s)
+D diffusion coefficient for oxygen flowing through T temperature (K)
+O2–He
+helium (m2/s) T gas temperature (K)
+g
+f bubble formation frequency (1/s) T critical helium temperature defined in Eq. (31)
+b He,crit
+f0 number of bubbles generated during initial 1s (K)
+b
+(f Æ1s) T normal boiling-point temperature at P (K)
+b ref ref
+h gas-to-interface heat transfer coefficient (W/ T (P ) saturation temperature of the liquid oxy-
+gi sat GOX,b
+m2K) gen at P (K)
+GOX,b
+h liquid-to-interface heat transfer coefficient (W/ T interface temperature (K)
+li i
+m2K) T liquid oxygen temperature (K)
+LOX
+(cid:2)h average gas-to-interface heat transfer coefficient T initial liquid oxygen temperature (K)
+gi LOX,i
+(W/m2K) T wall temperature (K)
+w
+(cid:2)h average liquid-to-interface heat transfer coeffi- u bubble rising velocity (m/s)
+li b
+cient (W/m2K) v diffusion volume in Eq. (6)
+h heat of vaporization of liquid oxygen (kJ/kg) V detached bubble volume in Eq. (8) (m3)
+fg b,d
+H heat of vaporization of liquid oxygen per mole V LOX volume (m3)
+fg LOX
+(kJ/mole) V_ helium injection volume flow rate (m3/s)
+He
+i real interface x oxygen mole fraction
+O2
+m mass of liquid oxygen (kg) x oxygen mole fraction at ‘u’ surface
+LOX O2;u
+m_ helium injection mass flow rate (kg/s) x oxygen mole fraction at ‘s’ surface
+He O2;s
+m_ evaporation rate of liquid oxygen due to heat X mole ratio defined in Eq. (16)
+LOX;h
+flux (kg/s) X critical value of X for cooling of liquid oxygen
+cr
+m_ evaporationrate ofliquidoxygen duetodiffu- defined in Eq. (30)
+LOX;diff
+sion (kg/s) Z compressibility factor
+m_ total generation rate of oxygen vapor
+GOX
+ðm_ ¼m_ Þ (kg/s) Greek letters
+GOX LOX
+m_ total evaporation rate of liquid oxygen a void fraction, thermal diffusivity (m2/s)
+LOX
+ðm_ þm_ Þ (kg/s) b coefficient of thermal expansion (1/K)
+LOX;h LOX;diff
+M molecular weight (kg/kmol) l dynamic viscosity (Pas)
+M molecular weight of oxygen (kg/kmol) m kinematic viscosity of (m2/s)
+GOX
+M molecular weight of helium (kg/kmol) q helium density (kg/m3)
+He He
+P
+n mole summation symbol
+n_ mole change rate (1/s) r surface tension of liquid (N/m)
+n moles of helium gas in bubbles
+He,b
+n moles of oxygen vapor in bubbles Subscripts
+GOX,b
+Nu average Nusselt number amb ambient
+D
+P pressure (MPa) b bubble
+P partial pressure of helium gas (MPa) g gas
+GHe
+P partial pressure of helium gas in bubbles (MPa) gi gas-to-interface
+GHe,b
+P partial pressure of oxygen gas (MPa) GOX gaseous oxygen
+GOX
+P partialpressureofoxygengasinbubbles(MPa) He, GHe helium gas
+GOX,b
+P partial pressure of oxygen gas at ‘s’ surface i real interface, initial value
+GOX,s
+P referencepressure(atmosphericpressure)(MPa) L liquid
+ref
+P (T ) saturation vapor pressure of liquid oxygen li liquid-to-interface
+sat LOX
+at T (MPa) LOX liquid oxygen
+LOX
+P system pressure (MPa) s vapor side interface
+sys
+
+===== PAGE 3 =====
+
+780 N.Choetal./Cryogenics46(2006)778–793
+sat saturation LN2 liquid nitrogen
+sys system LOX liquid oxygen
+u liquid side interface min minute
+w wall TT temperature transmitter
+PT pressure transmitter
+Abbreviations LT level transmitter
+GHe gaseous helium FM flow meter
+GOX gaseous oxygen
+re-warmed by the heat transfer during pre-pressurization
+Back pressure LOX Tank
+stage. If the helium injection cooling is performed after regulating
+pre-pressurization,thetemperatureofcryogenicpropellant
+Thermodynamic
+can be maintained at low level. phase equilibrium
+Ullage
+For the purpose of ground pre-pressurization with
+heliumbubbling,itisdesirableforliquidoxygenbulktem- GHe
+perature to decrease or at least not increase during this GOX
+process.Tosatisfytherequiredliquidoxygentemperature, LOX
+proper combination of relevant operating parameters
+Helium P =P (T )
+should be identified. bubble GOX,b sat LOX
+In this paper, we discuss the characteristics of helium
+injection cooling under pressurized condition, with the
+associated physical understanding of the process. Experi- Helium
+supply
+mentalresultsalongthesimulationsofvariouslycombined
+system parameters are presented. A non-dimensional
+Fig.1. Schematicdiagramofheliuminjectioncoolingsystem.
+parameter for identifying the cooling regime is also
+introduced.
+This paper is organized as follows. Section 2, starting saturated vapor pressure of liquid oxygen at particular
+with the principle of helium injection cooling, reviews the temperatureoftheliquidP (T ).Thisdiffusionprocess
+sat LOX
+finite heat transfer and instantaneous diffusional mass (or evaporation process) results in a cooling effect caused
+transfer concept developed in the authors’ previous article by the vaporization heat of surrounding liquid.
+[6]. In Section 3, we discuss the qualitative characteristics Fig.2portraysthesub-coolingeffectofheliuminjection.
+of helium injection cooling under pressurized condition. In order to clearly define the partial pressure at the inter-
+Section 4 describes the method of analysis and the experi- face surface, imaginary surfaces denoted by ‘u’ and ‘s’ are
+ment. Section 5 presents the results and discussion of the introducedonbothsidesoftherealinterface.Eachsurface
+analysis and experiments. Finally, in Section 6, a non- is indefinitely close to the real interface i, as shown in
+dimensional parameter for identifying cooling regime is
+conceived. The critical values of the non-dimensional
+parameters and the injected helium temperatures are also
+GHe+GOX
+estimated. u s
+x =1
+O ,u
+2
+2. Principle of helium injection cooling and its modeling Stationary x = f (T )
+O ,s sat
+LOX 2
+x
+Fig. 1 shows the schematic of helium injection cooling O
+2
+system.Fundamentalprincipleofsub-coolingofcryogenic
+propellant by helium injection is diffusional mass transfer.
+Since the injected helium is pure, the difference in the
+partial pressure of oxygen in helium bubble and the vapor
+pressure of liquid oxygen causes diffusional mass transfer
+of oxygen vapor into the helium bubble. Ideally, the
+oxygen continues to diffuse into the helium bubbles until
+Real Helium
+thermodynamic phase equilibrium is reached. The equilib-
+interface (i) injection
+rium point is established when the partial pressure of oxy-
+gen vapor in the bubble P GOX,b is exactly equal to the Fig.2. Schematicdiagramofprincipleonheliuminjectioncooling.
+
+===== PAGE 4 =====
+
+N.Choetal./Cryogenics46(2006)778–793 781
+Fig. 2, with liquid oxygen evaporating into helium gas and instantaneous diffusional mass transfer model’ gives
+stream. At ‘u’ surface, liquid-phase quantities of oxygen satisfactory agreement with experimental data for small
+are assumed and mole fraction of oxygen x , while, at bubbles and gas with high diffusion coefficient such as
+O2;u
+‘s’ surface, gas phase quantities of oxygen are assumed helium [6].
+and mole fraction x is calculated from thermodynamic Forthefiniteheattransferandinstantaneousdiffusional
+O2;s
+equilibrium with the liquid oxygen at the ‘u’ surface. If mass transfer model, liquid oxygen evaporation rate m_
+LOX
+purehelium isinjectedintoliquidoxygen, thepartial pres- is calculated with the prescribed heat transfer coefficients
+sure of oxygen vapor at the ‘s’ surface would significantly (gas-to-interface: h , liquid-to-interface: h ), net bubble
+gi li
+differ from that in bulk gas, which causes diffusional mass surfacearea(A)andinterfacetemperature(T)foragiven
+s i
+transferofoxygenaccordingtoFick’slawofdiffusionfrom system as shown in Eq. (4) [6]
+the ‘s’ surface. In this case liquid oxygen should be vapor-
+ized and supplied to the gas region to satisfy thermody- m_ LOX ¼A sðh giðT g(cid:3)T iÞ(cid:3)h liðT i(cid:3)T LOXÞÞ=h fg: ð4Þ
+namic phase equilibrium in the gas region. The total
+liquid oxygen vaporization rate m_ may be expressed In Eq. (4), with the instantaneous diffusion mass transfer
+LOX
+by the summation of two types of vaporization according assumption, the partial pressure of oxygen at the ‘s’
+to their origins: the vaporization rate due to heat transfer surface,P isequaltothebulkpartialpressureofoxy-
+GOX,s
+between the gas bubble and liquid oxygen m_ and the gen in the bubble, P . Also, since the ‘s’ surface is
+LOX;h GOX,b
+vaporization rate due to pure diffusion m_ as shown indefinitely close to the real interface (i), the real interface
+LOX;diff
+inEq.(1).Iftheamountofvaporizationissmallcompared temperatureT inEq.(4)canbecalculatedfromthepartial
+i
+with the remaining liquid oxygen mass, m_ (cid:2)Dt=m pressure of oxygen in the bubble as in Eq. (5)
+LOX LOX
+<<1,thentherateatwhichthebulkliquidoxygenenergy
+change is given as in Eq. (2), where Q_ gi is the heat transfer T i ¼T satðP GOX;bÞ: ð5Þ
+rate from the gas bubble to the liquid oxygen interface,
+m_ h is the latent heat transfer rate by phase change Liquid oxygen has finite vaporization rate depending
+LOX fg
+of liquid oxygen, and Q_ is the heat transfer rate into on the net bubble surface area, and the relevant heat
+amb
+liquid oxygen from surrounding ambient. The liquid transfer coefficients. Since thermodynamic phase equilib-
+oxygen vaporization due to heat transfer m_ can be rium in bubble requires the partial pressure of oxygen in
+LOX;h
+related to Q_ as shown in Eq. (3). Substituting Eqs. (1) the bubble to be equal to the saturated vapor pressure
+gi
+and (3) into the energy balance equation, Eq. (2), the of liquid oxygen at particular temperature of liquid,
+vaporization due to heat transfer m_ is now canceled. the difference between the partial pressure of the oxygen
+LOX;h
+Therefore, the vaporization due to diffusion m_ is in the bubble and the vapor pressure of the liquid oxy-
+LOX;diff
+the main drive for cooling. Liquid oxygen sub-cooling by gen propels the generated oxygen vapor into the bubble
+heliuminjectioncanbeconclusivelycharacterizedbydiffu- without degradation (not diffusion-limited). The trans-
+sion-driven evaporative cooling ferred oxygen vapor mixes with helium gas instanta-
+neously.
+m_ ¼m_ þm_ ; ð1Þ
+LOX LOX;h LOX;diff
+dT 3. Characteristics of helium injection cooling under
+m C LOX ¼Q_ (cid:3)m_ h þQ_ ; ð2Þ
+LOX p;LOX dt gi LOX fg amb pressurized condition
+Q_ (cid:4)m_ h : ð3Þ
+gi LOX;h fg To understand the characteristics of helium injection
+cooling under pressurized condition, a comparison with
+In the investigation of helium injection cooling, three the case of atmospheric condition may be helpful.
+limitingcases canbe establishedintermsofheatand mass First,liquidoxygenisinitiallyatsub-cooledstateunder
+transfer aspects. The first case is instantaneous heat and pressurizedcondition.Thisissignificantdifferencefromthe
+mass transfer wherethe bulk liquid and thegas arealways atmosphericconditionwhereliquidoxygenusuallyexistsat
+in thermodynamic phase equilibrium state. This approach saturated condition (90.2K at 1bar). To provide proper
+theoretically gives maximum liquid oxygen evaporation propellant temperature to engine, cryogenic propellant
+rate and sub-cooling rate. The second case is finite heat should maintain its sub-cooled state during pressurized
+transfer and instantaneous diffusional mass transfer. In period. Therefore, helium injection cooling under pressur-
+this case, the temperatures of the bulk liquid and gas izedconditionmustbecharacterizedbycoolingofinitially
+are different due to finite heat transfer. However, due to sub-cooled cryogenic liquid.
+the assumption of infinite diffusion mass transfer rate, The main difference between saturated and sub-cooled
+the partial pressure of the oxygen vapor at the ‘s’ surface liquid is the vapor pressure. For saturated condition, the
+remains equal to that of the bulk gas. The third case is liquidoxygenvaporpressureisequaltoitssystempressure
+finite heat and mass transfer. Although the ‘finite heat (P (T )/P =1), whereas for sub-cooled condition,
+sat LOX sys
+and mass transfer model’ is certainly the most realistic the liquid oxygen vapor pressure is lower than the system
+description of the phenomenon, the ‘finite heat transfer pressure(P (T )/P <1).Sincethepressuredifference
+sat LOX sys
+
+===== PAGE 5 =====
+
+782 N.Choetal./Cryogenics46(2006)778–793
+P (T )(cid:3)P causes diffusional mass transfer, the 4. Methods of analysis and experiment
+sat LOX GOX,b
+lowerliquidoxygenvaporpressurereducestheeffectiveness
+ofheliuminjectioncooling.Thisfeatureisdeeplydiscussed 4.1. Analysis
+in later sections with analytical and experimental results.
+Second, since the system pressure is high, relatively The analysis procedure consists of two steps: the single
+higher helium mass flow rate is supplied with a specified bubble analysis and the bubbling system analysis. From
+volumeflowrate.Ingeneral,thevolumeflowrateofhelium the single bubble analysis, the average bubble diameter
+V_ inthecaseofheliuminjectioncoolingislimitedbythe D , heat transfer coefficients (gas-to-interface heat transfer
+He b
+situation for individual bubbles not to have interaction coefficient; (cid:2)h and liquid-to-interface heat transfer coeffi-
+gi
+whichsignificantlydecreasetheoverallbubblesurfacearea cient; (cid:2)h Þ and average bubble rising velocity (cid:2)u of single
+li b
+byconglomeration.Therefore,V_ =V usuallyhasalim- bubble rising through liquid oxygen during bubble resi-
+He LOX
+ited range of variation among systems under different sys- dence time in liquid oxygen are obtained for the specified
+tem pressures associated with helium injection cooling. helium injection cooling system. The detailed description
+For the specified volume flow rate, the helium mass flow of correlations for each step of single bubble analysis is
+rate ism_ ¼q V_ ,where the helium mass flow rate m_ available in Ref. [6].
+He He He He
+increases with density q which also increases with the The parameter values obtained from the single bubble
+He
+systempressureunderpressurizedcondition.Theincreased analysis are used for the bubbling system analysis. Table 1
+heliummassflowratelowersthepartialpressureofoxygen showstwoinputconditionsforthebubblingsystemanalysis
+in the helium bubble, which enhances diffusional mass underpressurizedcondition(3bar):sub-cooled(91K)and
+transfer. However, as the mass flow rate increases, so does saturated (102K), which are obtained from the single
+the amount of energy flow, which increases liquid oxygen bubble analysis.
+evaporationduetoheattransferandalwaysnegativelycon- The bubbling system analysis is performed using a
+tributes to the desired cooling. The effects of increased commercial code SINDA/FLUINT, the comprehensive
+liquid oxygen evaporation due to increased energy flow finite-difference, lumped parameter tool [8]. To model
+are extensively discussed in thefollowing sections. non-equilibrium phase bubbler with the concept of finite
+Third, the diffusion coefficient is known to be inversely heat transfer and instantaneous diffusion, two lumps are
+proportional to the system pressure as described in established: one liquid lump and one vapor lump.
+Eq. (6) [7], The pressure relation is applied for the pair of two
+lumps as shown in Eq. (7) considering the gas lump as a
+10(cid:3)3(cid:2)T1:75(cid:2)½ðM þM Þ=ðM M Þ(cid:5)2 spherical bubble
+D ¼ GOX GHe GOX GHe :
+GOX–GHe (cid:2)h i2
+P ðP vÞ1=3 þðP vÞ1=3
+GOX GHe 2r
+P ¼P þ : ð7Þ
+ð6Þ g l r b
+We will not consider the pressure effect on the diffusion Thedistributionofbubblesizeorrisingvelocityisnotcon-
+coefficient in this paper. sidered in this bubbling system. We use simply a single
+Table1
+Examplesofinputparametersforbubblingsystemanalysis
+Parameters Sub-cooledcondition Saturatedcondition Ref.
+Systempressure 3bar 3bar P ismaintainedby
+sys
+atmosphericventing
+InitialLOXtemperature 91K 102K
+Heliuminjectionrate(V_ He=V LOXÞ 0.0012m3/s(1.2min(cid:3)1) 0.0014m3/s(1.4min(cid:3)1)
+InjectedHeliumTemperature 288K 288K
+Detachedbubblediameter(D ) 0.056m 0.059m
+b,i
+Averagebubblediameter(D ) 0.051m 0.052m
+b
+Averagerisingbubblevelocity(m/s) 0.54m/s 0.55m/s
+Averagebubblevolume(V b) 0.07l 0.074l V(cid:2) b¼4=3(cid:6)ðD b=2Þ3
+Numberofbubble(N b) N b¼V g=V Totalgasvolume(V g)
+b
+dependsonhelium
+injectionrateandLOX
+vaporization
+Overallbubblesurfacearea(A s) N b(cid:6)4(cid:6)pi(cid:6)ðD b=2Þ2
+Averagegas-to-interfaceheattransfer 19.8W/m2K 37.8W/m2K
+coefficient(h )
+gi
+Averageliquid-to-interfaceheattransfer 443.2W/m2K 398.1W/m2K
+coefficient(h )
+li
+
+===== PAGE 6 =====
+
+N.Choetal./Cryogenics46(2006)778–793 783
+diameterandasinglerising velocityfornumerical analysis GHe supply for
+undertheassumptionthatbubblescanbetreatedindepen- pressurization PT1 TT11 Vent
+dentlyfromotherbubbles,whichisvalidforlowvoidfrac-
+tion system (a<0.1) [9]. FM4
+The interface area corresponding to overall bubble
+GHE supply
+surface area is calculated based on the number of bubbles
+inthebubblingsystem.Thenumberofbubblesisobtained
+TT10 FM3
+from the ratio of the mixture gas volume composed of
+TT9
+helium and oxygen vapor to the averaged single bubble
+TT8
+volumeobtainedfromthesinglebubbleanalysis.Thenum- TT7 LOX tank
+berofbubblesmultipliedbytheaveragedsinglebubblesur- TT6 TL
+faceareagivestheoverallsurfaceareaatspecifictime.The TT5
+average heat transfer coefficients obtained from the single TT4
+TT3
+bubble are used for the bubbling system analysis. With
+TT2
+given thermodynamic states (temperatures, pressures,
+TT1
+partialpressures,etc.),theoverallsurfaceareaandtheheat
+transfercoefficientsofsinglebubble,theinstantaneousoxy-
+GHe supply FM2
+genvaporizationrateisreadilycalculatedwithEq.(4).The
+interface temperature is calculated based on the partial
+pressureofoxygeninthegasregion.Thegeneratedoxygen
+vaporinliquidlumpisassumedtobepropelledintothegas GHe supply FM1
+lump immediately and mixed with helium gas. During the
+heliuminjectionprocess,thegaslumppressureiskeptcon- LOX supply
+stantbyadjustinglossfactorofventvalveinSINDA/FLU-
+INTcode.Thissimulationalgorithmcalculatesthecooling
+performanceandtherelateddataforheliuminjectioncool- LOX drain
+ing of liquid oxygen with the assumption of finite heat
+Fig.3. Schematicsoftestsetupforambienttemperatureheliumsupply.
+transfer and instantaneous diffusion mass transfer.
+4.2. Test methods
+.somtA
+The injection cooling process has been investigated
+experimentally using two geometrically and functionally
+different test setups. The functional difference between the Pressurization
+FMPTTT
+two test facilities is the injected helium temperature: one
+Back pressure
+at ambient temperature and the other at low temperature.
+TT regulator
+Fig.3showstheexperimentalsetupfora90l,2.5mtall TT
+TT T
+by 0.23m diameter test tank into which ambient tempera-
+TT
+ture helium is injected. Axial temperature distribution is TT
+TT
+measured with 10 RTD type temperature sensors. Fig. 4 TT
+LOX TT Temperature
+shows the experimental setup for a 60l test tank with a TT sensor array
+0.2m inside diameter and 2.0m height. Helium gas is TT
+TT
+cooled by a heat exchanger immersed in liquid nitrogen TT FM
+TT
+bath. The axial temperature distribution is measured with
+TT
+18 RTD type temperature sensors placed at 10cm interval TT GHe supply
+GHe TT
+along the height. For the two experimental facilities, aver- injection TT
+age temperature transients are plotted in the following TT LN2
+results, the deviation from the average value along axial
+PTTT PTTT GHe
+direction of the tank is within 0.2K. It is considered that cooling
+the thermal stratification between layers of liquid oxygen
+Fig.4. Schematicsoftestsetupwithlowtemperatureheliumsupply.
+is small due to the mixing effect caused by the injected
+helium gas.
+For the two test setups, the tank was filled with liquid volume flow rate value of a turbine type flow-meter. The
+oxygen up to80%ofthetank height prior tohelium injec- tank pressure was controlled by a back pressure regulator
+tion.Heliumgasatconstantvolumeflowratewasinjected installedattheventportandtheullagepressureincrement
+through a submerged orifice with 6.3mm diameter by was measured. Before each helium injection test, ambient
+adjusting the upstream pressure referred by the measured backgroundheatinglosswascalculatedfromthemeasured
+
+===== PAGE 7 =====
+
+784 N.Choetal./Cryogenics46(2006)778–793
+Table2
+Mainparametersandtheireffectsforheliuminjectioncooling
+No. Variableparameters Affectedparameters
+1 Ratioofsystem(LOX)pressuretoLOXsaturationpressuretemperature P (T )
+sat LOX
+correspondingtoLOXtemperature,P /P (T )
+sys sat LOX
+2 RatioofinitialLOXtemperaturetoLOXsaturationtemperature P (T )
+sat LOX
+correspondingtosystem(LOX)pressure,T /T (P )
+LOX,i sat LOX
+3 RatioofHeliumvolumeflowtoLOXvolume,V_ =V P
+He LOX GOX,b
+4 RatioofHeliumtemperaturetoinitialLOXtemperature,T /T P
+He LOX,i GOX,b
+Table3
+Parametervariationsfortestandanalysis
+No. Independentparameters Parametervariation Ref.
+range
+1 Systempressure,P (orP )(bar) 1,3,3.5bar
+sys LOX
+2 InitialLOXtemperature,T (K) 91K Saturatedat1bar
+LOX,i
+99K Subcooledat3.5bar
+102K Saturatedat3bar
+3 HeliuminjectionvolumeflowratedividedbyLOXvolume, 1–1.4min(cid:3)1
+V_ He=V ðmin(cid:3)1Þ
+LOX
+4 Injectedheliumtemperature,T (K) 114,140,288K For114K,140Kcases,heliumiscooled
+He
+byLN2priortoinjection
+liquidoxygentemperature[10].Foratmosphericcondition effectively lower the partial pressure of oxygen in helium
+whereliquidoxygenexistsatsaturatedcondition(90.2Kat bubble at high injected helium flow rate, low temperature
+1bar),ambientbackgroundheatinglosswas150Wforthe heliumcanbe utilized. Theoretically, iftheinjected helium
+ambient-temperature-helium supply facility, Fig. 3, and has the same temperature with the liquid oxygen, the
+175W for the low-temperature-helium supply facility, vaporization due to heat transfer is zero, and all the
+Fig. 4, respectively. injected heliumisusedtolower thegaseous oxygenpartial
+pressure in bubbles. Main parameters and their effects are
+qualitatively described in Table 2. The variation range of
+4.3. Parameters for analysis and tests main parameters for experiments and analysis are estab-
+lished and summarized as in Table 3.
+Asmentionedabove,thedifferenceintheoxygenpartial
+pressureinheliumbubbleP andthevaporpressureof 5. Results and discussions of analysis and experiments
+GOX,b
+liquid oxygen P (T ) is the main source of diffusion-
+sat LOX
+drivenevaporativecooling.Twomethodscanbeconceived 5.1. Results for system pressure variation with ambient
+to increase the difference and the net diffusion-driven temperature helium injection
+evaporation.
+Firstmethodistoincreasethevaporpressure.Themax- The comparison of measured cooling performances for
+imum vapor pressure that liquid oxygen can attain, is the twosystempressuresalongwithanalyticalresultsisshown
+saturation vapor pressure corresponding to the saturation in Fig. 5: atmospheric and pressurized condition (3bar).
+temperature of liquid oxygen. Since the vapor pressure Ambienttemperaturehelium(288K)isinjectedintoliquid
+increases with liquid oxygen temperature, saturated liquid oxygen for both cases. For atmospheric system pressure,
+oxygenismoresusceptibletoheliuminjectioncoolingthan theliquidoxygeniscooledfromitsinitiallysaturationtem-
+sub-cooled one. perature at 91K down to 85.3K after 1500s with 100l/
+Second method is to decrease the partial pressure of min (V_ =V ¼1:39min(cid:3)1) helium injection rate. For
+He LOX
+oxygen in helium bubble. To decrease the partial pressure pressurized condition case (at 3bar), on the other hand,
+of oxygen, high volume rate of helium is preferable. How- the initially sub-cooled liquid oxygen (91K) is warmed
+ever, if the injected helium temperature is higher than during helium injection with 87l/min (V_ =V ¼
+He LOX
+liquid oxygen, the high mass flow inevitably accompanies 1:21min(cid:3)1) injection rate.
+high energy influx which vaporizes liquid oxygen by heat Liquid oxygen temperature variation is directly influ-
+transfer between the warm helium and liquid oxygen. This encedbythevaporizationrateofliquidoxygen.Thevapor-
+heat induced vaporization subsequently increases gaseous izationrateisanalyzedintotwocomponents.Thefirstone
+oxygen partial pressure in helium bubbles. We have to is the vaporization due to heat transfer from helium gas
+consider, therefore, the net effect of helium flow rate. To (vaporsideheattransfer)whichisthefirsttermontheright
+
+===== PAGE 8 =====
+
+N.Choetal./Cryogenics46(2006)778–793 785
+95 ofvaporization.Whereas,forthecaseof1barsystempres-
+sure, the vaporization by the vapor side heat transfer is
+94
+. smaller than the vaporization by the liquid side. It can be
+93 V /V =1.21min−1
+He LOX explained that for pressurized condition (3bar), about 3
+92 timesmoreheliummassflowisinjectedintotheliquidoxy-
+)K(
+gen compared to the atmospheric case with the same
+91 P=1 bar (measured)
+erutarepmeT
+P=3 bar (measured) volume flow rate, which greatly increases vaporization
+90
+P=1 bar (calculated) due to heat transfer between the warm helium and liquid
+P=3 bar (calculated)
+89 oxygen. This situation increases gaseous oxygen partial
+88 pressureinheliumbubbleandsubsequentlysuppressesdif-
+fusion-driven evaporation.
+87 V. He/V LOX =1.39min−1 Fig. 7 shows the comparison of gaseous oxygen partial
+86
+pressure and corresponding liquid oxygen vapor pressure
+0 200 400 600 800 1000 1200 1400 for the two cases. For the atmospheric pressure system,
+Time (sec) the gaseous oxygen partial pressure is lower than liquid
+oxygen saturation pressure, however, for pressurized con-
+Fig. 5. Comparison of cooling performance between atmospheric and
+pressurizedcondition(T =91K,T =288K). dition (3bar), the gaseous oxygen partial pressure is
+LOX,i He
+inEq.(4),definedasA(h (T (cid:3)T))/h .Thesecondoneis
+s gi g i fg
+the vaporization due to heat transfer from liquid oxygen
+(liquid side heat transfer) which is the second term on the 1.1
+rightinEq.(4),definedasA((cid:3)h (T (cid:3)T))/h ,accounting
+s li i l fg
+fordiffusion-drivenevaporation.Theinterfacetemperature 1.0 GOX partial pressure (P=1 bar)
+LOX vapor pressure (P=1 bar)
+T iiscalculatedbasedontheinstantaneouspartialpressure GOX partial pressure (P=3 bar)
+of gaseous oxygen in the gas region, T =T (P ). The 0.9 LOX vapor pressure (P=3 bar) )rab(
+i sat GOX
+two vaporization components are coupled as once the erusserP
+0.8
+vaporization due to the vapor side heat transfer increases
+oxygen partial pressure in the gas region, the liquid side
+0.7
+heat transfer driven by mass diffusion decreases. The
+reference analysis condition is that 90l liquid oxygen
+0.6
+(91K) is filled and the helium gas with 90l/min
+(V_ =V ¼1min(cid:3)1) at 288K is injected into liquid oxy-
+He LOX 0.5
+gen. The result in Fig. 6 shows that for the case of 3bar 0 200 400 600 800 1000 1200 1400
+system pressure,the vaporization by the vapor side contri- Time (s)
+bution isdominant compared to theliquid side heattrans-
+Fig. 7. Comparison of GOX partial pressure and LOX vapor pressure
+fer component. The liquid side heat transfer actually has between atmospheric and pressurized condition (V_ =V ¼1min(cid:3)1,
+He LOX
+smallnegativevalueindicatingcondensationoccursinstead T =91K,T =288K).
+LOX,i He
+Vapor side (1 bar)
+Liquid side ( 1 bar)
+0.0040
+Total (1 bar)
+0.0035 Vapor side ( 3 bar)
+Liquid side (3 bar) )s/gK(
+0.0030 Total (3 bar)
+0.0025 etar
+0.0020 noitaziropav
+0.0015
+0.0010
+0.0005 XOL
+0.0000
+-0.0005
+0 200 400 600 800 1000 1200 1400
+Time (s)
+Fig.6. Comparisonofvaporizationcomponentsbetweenatmosphericandpressurizedcondition(V_ =V ¼1min(cid:3)1,T =91K,T =288K).
+He LOX LOX,i He
+
+===== PAGE 9 =====
+
+786 N.Choetal./Cryogenics46(2006)778–793
+slightly higher than liquid oxygen saturation pressure 3.0
+which suggests that condensation occurs and subsequent
+GOX partial pressure (saturated LOX)
+warming of liquid oxygen. LOX vapor pressure (saturated LOX)
+For pressurized case, the gaseous oxygen partial pres- 2.5 GOX partial pressure (subcooled LOX)
+LOX vapor pressure (subcooled)
+sure in Fig. 7 and the corresponding vaporization by the
+)rab(
+vapor side heattransfer in Fig. 6indicatethecauseof fail- 2.0
+ure of liquid oxygen cooling by helium injection.
+erusserP
+1.5
+5.2. Results for initial liquid oxygen temperature variation
+The comparison of experimental cooling performances 1.0
+for two liquid oxygen initial temperatures along with
+analytical results under pressurized conditions (3bar) is
+0.5
+shown in Fig. 8: 91K sub-cooled liquid oxygen and 0 200 400 600 800 1000 1200 1400
+102Ksaturated liquid oxygen.For saturatedcase, the test Time (s)
+was initiated when liquid oxygen, due to ambient heating,
+Fig. 9. Comparison of GOX partial pressure and LOX vapor pressure
+reached its saturation temperature. Ambient temperature betweensub-cooledLOXandsaturatedLOX(P=3bar,T =288K).
+He
+helium(288K)isinjectedintoliquidoxygenforbothcases
+with varying injection flow rates. The experimental results
+give distinctive difference between the initially sub-cooled Fig. 9 shows the comparison of gaseous oxygen partial
+and the initially saturated liquid oxygen under the helium pressure and corresponding liquid oxygen vapor pressure
+injection process. For initially saturated liquid oxygen, for the two cases. For initially saturated liquid oxygen,
+theliquidoxygeniscooledfromitssaturationtemperature the vapor pressure is so large that the developed gaseous
+of 102K at 3bar down to 94K after 1500s with 96l/min oxygenpartialpressureofevenmorethan2barcannotstill
+(V_ =V ¼1:34min(cid:3)1) injection rate. For the initially stop diffusion-driven evaporative cooling. It is concluded
+He LOX
+sub-cooled case (T =91K), helium injection induces thatsaturatedliquidoxygenhasalwaysanadvantageover
+LOX,i
+heating. The different performance between the two cases the sub-cooled liquid oxygen for the purpose of helium
+can be explained by the difference of the vapor pressure injection cooling. Increasing the helium flow rate for the
+of liquid oxygen because the vaporization rate by vapor sub-cooled liquid oxygen suppresses the warming rate but
+side heat transfer is almost same. The vapor pressure of cannot reverse the warming tendency as shown in Fig. 8.
+102K liquid oxygen is 3bar and the vapor pressure of
+91K liquid oxygen is 1bar. Since higher liquid oxygen 5.3. Results for helium temperature variation
+initial temperature creates higher liquid oxygen vapor
+pressure, the difference between the liquid oxygen vapor To examine the effect of injected helium temperature,
+pressure and the oxygen partial pressure in the helium preliminarytestswereperformedunderatmosphericcondi-
+bubble (P ) increases with liquid oxygen initial tem- tion with helium temperature variation. Fig. 10 shows the
+GOX,b
+perature, which enhances diffusion-driven evaporative experimental results for saturated liquid oxygen under
+cooling. atmospheric condition. Two cases are noteworthy: 288K
+11 00 23 He injection rate(V. /V ) 91 He injection rate (V. He/V LOX,min−1)
+He LOX
+101 0.81 (measured) 90 1.34
+100 1.21 (measured) GHe: 288 K 0.5
+99 1.34 (measured) 89 1.05 )K(
+98 0.81 (calculated) )K( erutarepmeT
+1.21 (calculated) 88 97 erutarepmeT
+1.34 (calculated)
+96 87
+95
+86
+94
+XOL
+93 85
+92
+91 84 GHe: 114 K GHe: 140 K
+90
+83
+89
+0 200 400 600 800 1000 1200 1400 0 100 200 300 400 500 600
+Time (s) Time (s)
+Fig.8. Comparisonofcoolingperformancebetweensub-cooledLOXand Fig. 10. Comparison of cooling performance for helium temperature
+saturatedLOX(P=3bar,T =288K). variation(P=1bar).
+He
+
+===== PAGE 10 =====
+
+N.Choetal./Cryogenics46(2006)778–793 787
+0.007 Vapor side (91 K) 102
+Liquid side (91 K)
+288 K helium injection (measured)
+0.006 Total (91 K) 100 )s/gK(
+Vapor side (288 K) 114 K helium injection (measured)
+0.005 Liquid side (288 K) 98 288 K helium injection (calculated)
+Total (288 K) 114 K helium injection (calculated) etar )K(
+.
+0.004 96 P sys=3 bar,V He/V LOX=1.2min−1 erutarepmeT
+noitaziropav
+0.003 94
+0.002 92
+0.001 90
+XOL
+0.000 88
+.
+0 200 400 600 800 1000 1200 1400 86 P sys=3.5 bar,V He/V LOX =1.3min−1
+Time (s)
+200 400 600 800 1000 1200 1400
+Time (s)
+Fig. 11. Comparison of vaporization components between two helium
+temperatures(V_ He=V LOX¼1min(cid:3)1,T LOX,i=91K,P=3bar). Fig. 12. Comparison of sub-cooled and pressurized conditions with
+heliumtemperaturevariation.
+injectionand140Kinjection.For140Kinjection,although
+heliuminjectionrate(V_ He=V ¼0:5min(cid:3)1)islowerthan
+LOX 0.012
+288K injection (V_ =V ¼1:34min(cid:3)1), more sub-cool-
+He LOX Vapor side (114 K)
+ing is obtained, which indicates that injection of low tem- 0.010 Liquid side (114 K) )s/gk(
+perature helium is an effective means for helium injection Total (114 K)
+Vapor side (288 K) etar
+cooling purpose. For the colder 114K injection, we get 0.008
+Liquid side (288 K)
+more sub-coolingeffectthan that of 140K injection case. Total (288 K) noitaziropav
+Fig. 11 shows the analysis results for comparison of the 0.006
+vaporization components under pressurized condition
+(3bar) between two helium temperatures: 288K helium 0.004
+injection and 91K helium injection. For the case of 91K
+XOL
+0.002
+heliuminjection,thevaporsidecontributionismuchlower
+thaninthe288Kcase,butduetothesmallpartialpressure
+0.000
+ofthegaseousoxygen,theliquidsidecontributionislarger.
+It is also noticeable that the vaporization due to the vapor
+0 200 400 600 800 1000 1200 1400
+side heat transfer can increase oxygen partial pressure in Time (sec)
+thegasregion,whichsubsequentlydecreasestheliquidside
+Fig.13. Comparisonofvaporizationcomponentsbetweentwosub-cooled
+heat transfer driven by mass diffusion. Therefore, the
+and pressurized conditions with helium temperature variation (P=
+vaporization rate ultimately deceases. 3.5bar,V_ =V ¼1min(cid:3)1).
+He LOX
+5.4. Results for sub-cooled pressurized conditions with values as the test conditions (99K and 91K). For the low
+helium temperature variation temperature helium injection case, the vaporization rate
+duetovaporsideheattransferisrelativelysmallcompared
+Fig.12showstheexperimentalresultsforcomparisonof to that of the ambient temperature injection case, which
+sub-cooledpressurizedconditionswithheliumtemperature keepsgaseousoxygenpartialpressurebelowthesaturation
+variation.Oneisinitially99Ksub-cooledliquidoxygenat pressure of liquid oxygen as shown in Fig. 14. From these
+3.5bar (the saturation temperature at 3.5bar is about experimental and analytical results, we can conclude the
+104K) into which low temperature (114K) helium is injection of low temperature helium induces cooling of
+injected (V_ He=V LOX ¼1:3min(cid:3)1), The other is initially sub-cooledliquidoxygenevenunderpressurizedcondition.
+91K sub-cooled liquid oxygen at 3bar into which atmo-
+spheric temperature (288K) helium is injected (V_ =
+He
+V ¼1:21min(cid:3)1).Theresultshowsthatonlyfortheini- 5.5. Summary of the results
+LOX
+tially 99K sub-cooled LOX, the temperature decreases.
+Cooling occurs down to 86.8K at 1500s by low tempera- Several observations presented above have shown that
+ture (114K) helium injection. wecandivide thecases ofliquidoxygen cooling byhelium
+Fig. 13 shows the analysis results for comparison of the injection into two categories according to initial liquid
+vaporization components between two cases under 3.5bar oxygen temperature: saturated or sub-cooled. For initially
+and specified helium flow rate (V_ =V ¼1min(cid:3)1). The saturated liquid oxygen, sub-cooling of liquid oxygen is
+He LOX
+initial liquid oxygen temperatures are specified as identical easily achieved regardless of injected helium temperature
+
+===== PAGE 11 =====
+
+788 N.Choetal./Cryogenics46(2006)778–793
+byheattransfer.Thissimplificationallowsustoinvestigate
+2.4
+the effect of gaseous oxygen partial pressure developed by
+2.2
+GOX partial pressure (114 K)
+theevaporationdue todiffusion.The modelmaybeuseful
+2.0 LOX vapor pressure (114 K)
+1.8 GOX partial pressure (288 K) fordesignersto obtain somerough combination ofimpor-
+LOX vapor pressure (288 K) tant parameters which enables liquid oxygen cooling with- )rab(
+1.6
+1.4 out resorting to extensive numerical analysis during
+erusserP
+1.2 preliminarydesignstageofliquidpropellantrocket.
+1.0
+0.8 6.2. Liquid oxygen vaporization rate due to heat transfer
+0.6 at initial injection stage
+0.4
+0.2 Liquid oxygen vaporization is assumed to be developed
+0.0 from heat transfer between injected helium bubbles and
+0 200 400 600 800 1000 1200 1400 liquid oxygen at the initial injection stage. For calculating
+Time (s)
+the heat transfer rate, the net bubble surface area and the
+Fig. 14. Comparison ofGOX partialpressureandLOXvaporpressure heat transfer coefficient are required.
+betweentwosub-cooledandpressurizedconditionswithheliumtemper- Single bubble surface area at the initial injection stage
+aturevariation(P=3.5bar,V_ =V ¼1min(cid:3)1).
+He LOX maybecalculatedfromtheequivalentdetachedbubblesize
+fromthesubmergednozzleinliquidoxygen,andtherising
+even under pressurized condition. However, for initially velocity of the bubble iscalculated based on that detached
+sub-cooled liquid oxygen, the situation is a little bit com- bubble size. The correlations for single bubble size at
+plex. If the generated oxygen partial pressure in bubbles detachment and corresponding rise velocity can be found
+exceeds the vapor pressure of liquid oxygen, the vaporiza- from the references with the constant injection flow rate
+tion induced by diffusion does not occur. Therefore, in V_ andliquidandgasproperties[6,11].Selectioncriterion
+He
+order to cool the initially sub-cooled liquid oxygen, ofthepropermodelisalsodiscussedinthereferences. For
+gaseous oxygen partial pressure should be maintained as the conditions of the investigations in this paper, Eq. (8),
+low as possible. The method of lowering the injected which describes the volume of a bubble at detachment in
+helium temperature turns out to be effective for cooling an inviscid liquid [11], is used for the estimation of the
+purpose. detached bubble volume V and Eq. (9), which describes
+b,d
+the rising velocity for a bubble with diameter greater than
+5mm is used for the corresponding bubble rising velocity
+6. Simplified model for determining cooling condition u [12]
+b
+V_6=5
+6.1. General aspects of model simplification V ¼1:138 He ; ð8Þ
+b;d g3=5
+Asseenfromtheabovediscussion,ifthegaseousoxygen (cid:4)gðq (cid:3)q Þ (cid:2) D (cid:3)(cid:5)1=2
+u ¼1:05 l g (cid:2) b;d : ð9Þ
+partial pressure in helium bubble is lower than the liquid b q 2
+l
+oxygen vapor pressure, cooling occurs due to diffusion
+mass transfer. The difference between the gaseous oxygen The equivalent detached bubble diameter D and the
+b,d
+partial pressure and liquid oxygen vapor pressure is the corresponding surface area of the detached bubble A
+b,d
+largestatinitialinjectionstageandreducesasthesub-cool- are calculated by Eq. (10) as a spherical bubble
+ing of LOX proceeds, which accompanies decrease of
+liquid oxygen vapor pressure and mixture temperature. (cid:2) 6V (cid:3)1=3
+D ¼ b;d ; A ¼pD2 : ð10Þ
+The gaseous oxygen partial pressure developed in initial b;d p b;d b;d
+injection stage should be below the corresponding liquid
+oxygen vapor pressure for cooling liquid oxygen. The bubble formation frequency f (i.e., the number of
+b
+Inthefollowingsections,wedevelop asimplifiedmodel bubbles formed at the orifice per unit time) is determined
+for predicting cooling condition. The core of this model is as [13]
+toestimatethegaseousoxygenpartialpressurethatisdevel-
+V_
+opedduringinitialheliuminjectionstageandtoidentifythe f ¼ He; ð11Þ
+dominantoperatingparametersasnon-dimensionalformto b V
+b;d
+describesystembehaviorgenerallywithdifferentconfigura-
+tionsandoperatingconditions.Themodelassumesgaseous whereV_ isthevolumeflowrateofheliumthroughorifice
+He
+oxygen partial pressure is developed by heat transfer only andV isthedetachedbubblevolume,respectively.Ifwe
+b,d
+betweenheliumgasandliquidoxygeninadvance,andthen define f0 asthenumberofbubbles generated during initial
+b
+liquid oxygen vaporization due to diffusion occurs with 1s (f Æ1s), the averaged net surface area of the generated
+b
+reference to the gaseous oxygen partial pressure developed bubbles during the initial 1s, can be expressed
+
+===== PAGE 12 =====
+
+N.Choetal./Cryogenics46(2006)778–793 789
+1 tion (not diffusion limited), the instantaneous equilibrium
+A ¼ f0A : ð12Þ
+s 2 b b;d mole ratio X is defined by
+The heat transfer from helium gas to the interface of n
+X ¼ He;b ; ð16Þ
+liquid oxygen is in the form of natural convection inside n
+GOX;b
+spherical bubble. Empirical natural convection correlation
+proposed by Kreith [14] is applied for calculating the heat wheren andn arethemolesofheliumgasandthe
+He,b GOX,b
+transfer coefficient as shown in Eq. (13), inside spherical moles of oxygen vapor in the bubble, respectively. The
+cavity, which is known to be applicable to small bubble partialpressureofoxygenorheliumconstituentisassumed
+with low Rayleigh number (104<Ra6109) to satisfy the real gas law as shown in Eq. (17)
+Nu D ¼0:59Ra1 D=4; PV ¼ZnRT: ð17Þ
+gbðT (cid:3)T ÞD3 ð13Þ
+Ra D ¼ g am w ; Neglecting the pressure difference due to the surface
+tension in a bubble (2r/r ), according to Dalton’s law,
+b
+where the injected helium temperature, T He is used for the the pressure relation requires
+gas temperature, T . Since the bubble temperature change
+g
+may be small during the initial injection stage (initial 1s), P ¼P (cid:3)P : ð18Þ
+He;b sys GOX;b
+T (cid:4)T and the liquid oxygen saturation temperature
+He g
+T (P ) is used for the wall temperature (T ), respec- SubstitutingEqs.(17)and(18)intoEq.(16),themoleratio
+sat LOX w
+tively. The detached bubble diameter D is used for the parameter X, then can be related to the partial pressure
+b,d
+cavity diameter, D. The coefficient of expansion, b, kine- ratio as follows:
+matic viscosity, m and thermal diffusivity, a are evaluated
+P (cid:3)P Z
+at the film temperature (T +T (P ))/2. X ¼ sys GOX;b(cid:2) GOX; ð19Þ
+He sat LOX P Z
+Usingthespecifiedheliumvolumeflowrate,V_ ,helium GOX;b GHe
+He
+mass flow rate, m_ He is simply expressed as follows: which suggests that if the equilibrium mole ratio parame-
+m_ ¼q V_ ð14Þ terXatinitialinjectionstageisknown,thegaseousoxygen
+He He He partial pressure P can be obtained with the given
+GOX,b
+Theliquidoxygenvaporizationrateduetoheattransfer system pressure P and the compressibility factor ratio
+sys
+(m_ )atthe initial injection stage isobtained by balanc- Z /Z .
+LOX;h GOX GHe
+ing the energy required for vaporization with the heat Using Eq. (19), the gaseous oxygen partial pressure in
+transfer from helium gas to liquid oxygen in bubbles as the bubble P is expressed with the calculated non-
+GOX,b
+follows: dimensional parameter X as in Eq. (20)
+m_ ¼A ðh ðT (cid:3)T ðP ÞÞ=h ; ð15Þ Z =Z
+LOX;h s gi He sat LOX fg P ¼ GOX GHe (cid:2)P : ð20Þ
+GOX;b X þðZ =Z Þ sys
+where A is the average surface area of the generated GOX GHe
+s
+bubbles obtained from Eq. (12), h gi is the heat transfer For initially saturated liquid oxygen, system pressure P sys
+coefficient between the helium bubble and the liquid oxy- canbereplacedbythesaturationpressureofliquidoxygen
+gen from Eq. (13), h fg is the heat of vaporization of liquid P sat(T LOX).SincethemoleratioXhasapositivevalue,itis
+oxygen at the LOX initial temperature. Comparing evidentthatthecoolingrequirement(P <P (T ))
+GOX,b sat LOX
+Eq. (15) with the first term on the right of Eq. (4), the isalwayssatisfiedregardlessofthesystempressureandthe
+gas temperature T g in Eq. (4) is set equal to the helium injectedheliumtemperature.Thisreasoningagreeswiththe
+injection temperature T He only for the initial injection test results for initially saturated LOX presented in the
+stage. For the interfacial temperature T i, T sat(P LOX), the previous chapter. Whereas, for initially sub-cooled LOX,
+saturation temperature of liquid oxygen, is applied, which P (T ) is less than P . Therefore, P should be
+sat LOX sys GOX,b
+istheequilibriumtemperatureattheinterfaceofvolatileli- lessthanP (T )forcoolingbyselectingapropervalue
+sat LOX
+quid.Thisreasoningisvalidaslongasthemasstransferof of X. The cooling limit condition is set when P is
+GOX,b
+oxygen vapor into helium bubbles is sufficiently small [10]. equal to P (T ).
+sat LOX
+Since the analysis is focused on oxygen vapor generation From Eq. (16), the mole ratio change rate can be calcu-
+rate without considering the mass transfer rate into bub- lated as follows:
+bles,theequilibriumconditioncanbeappliedfortheinter-
+facial temperature. n_ GOX ¼ 1 (cid:3) X_ (cid:2)n He: ð21Þ
+n_ X X2 n_
+He He
+6.3. Gaseous oxygen partial pressure in bubbles at initial Assumingtheinstantaneousequilibriumisobtained,X_ can
+injection stage
+be thought as zero and Eq. (21) reduces to
+n_
+Assuming now the generated oxygen vapor is propelled X ¼ He : ð22Þ
+instantaneously into the helium bubbles without degrada- n_ GOX
+
+===== PAGE 13 =====
+
+790 N.Choetal./Cryogenics46(2006)778–793
+Since the number of moles of each component is equal to shown in Eq. (5), which accounts for the effect of diffu-
+the mass of that component divided by its molar mass as sion-driven evaporative cooling [6]. With the assumption
+shown in Eq. (23), the mole ratio parameter X can be de- ofinstantaneousdiffusionand thermodynamicphaseequi-
+scribedintermsofmassflowrateratioasshowninEq.(24) librium of oxygen vapor and helium gas at the interface,
+the interface temperature T in Eq. (27) can be related to
+n_ ¼m_ =M ; n_ ¼m_ =M ; ð23Þ i
+He He He GOX GOX GOX the gaseous oxygen partial pressure through Clausius–
+n_ m_ M
+X ¼ GHe ¼ He GOX: ð24Þ Clapeyron equation for an ideal gas, Eq. (28),
+n_ m_ M
+GOX GOX He
+H T
+Eq.(24)allowsustoestimatethemolerateratioXwiththe T i ¼T satðP GOX;bÞ¼ H (cid:3)T R(cid:2)f lg nðr Pef =P Þ; ð28Þ
+givenheliummassflowratem_ andtheLOXvaporization fg ref GOX;b ref
+He
+rate due to heat transfer (m_ GOX ¼m_ LOX;h) at the initial where H fg is the vaporization heat of liquid oxygen per
+injection stage. mole, P is the partial pressure of oxygen vapor in
+GOX,b
+BymakinguseofEqs.(12),(14)and(15),themoleratio the helium bubble, R is the universal gas constant
+parameterXforinitialheliuminjectionstagecanbefinally (8.3145Jmol(cid:3)1K(cid:3)1) and T is the normal boiling-point
+ref
+expressed as follows: temperatureatatmosphericpressureP .Eq.(27)issolved
+ref
+m_ M 2q V_ h M forliquid(liquidoxygen)coolingratedT LOX/dtandliquid
+X ¼ He GOX ¼ He He fg GOX oxygen temperature T is set equal to its initial temper-
+m_ M h f0A ðT (cid:3)T Þ M LOX
+GOX He gi b b;d He sat GHe ature T , then temperature change rate of liquid oxy-
+LOX,i
+ðf b0 ¼V_ He=V b;d(cid:2)1sÞ ð25Þ gen during the initial injection stage is approximated as
+follows:
+6.4. Liquid oxygen cooling rate at the initial injection stage DT A h
+LOX ¼(cid:3) s li (cid:2)ðT (cid:3)T Þ; ð29Þ
+Dt m C LOX;i i
+LOX p;LOX
+In determining cooling condition, the energy balance
+equation, Eq. (2) is carefully re-investigated. First, note where h is the boiling heat transfer coefficient associated
+li
+that the ambient heat flux Q_ in the equation tends to with liquid oxygen vaporization in the ‘u–i’ region as
+amb
+increase the temperature of liquid oxygen. We should shown in Fig. 2. This calculation is calculated based on
+notice that the higher liquid oxygen temperature caused the temperature difference between liquid oxygen, T
+LOX
+by Q_ creates the higher liquid oxygen vapor pressure. and the corresponding saturation temperature of liquid
+amb
+As discussed in the preceding chapters, the difference in oxygen, T (P ). The heat transfer coefficient, h does
+sat LOX li
+thevaporpressureofliquidoxygenandthepartialpressure notaffectwhetherliquidoxygeniscooled ornot, andonly
+of oxygen gas in helium bubble is the main factor of diffu- influences the absolute value of the temperature change
+sion-driven evaporative cooling (helium injection cooling). rate. The detailed description and correlations for h is
+li
+SincethehigherliquidoxygentemperaturecausedbyQ_ found elsewhere [6].
+amb
+creates higher liquid oxygen vapor pressure, it enhances SinceT isassociatedwiththepartialpressureofoxygen
+i
+diffusion-driven evaporative cooling. From this point of vapor developed by heat transfer, Eq. (29) allows us to
+view, smaller Q_ gives more severe situation for cooling calculate liquid oxygen cooling rate (or warming rate)
+amb
+condition.Tothedesignerswhoareinterestedincombina- duetodiffusion-drivenevaporation(orcondensation)with
+tion ofparametersadequate forcooling,theability topre- respecttothegaseousoxygenpartialpressuredevelopedby
+dict cooling condition in most severe condition ðQ_ ¼0Þ the heat transfer during the initial injection stage. In
+amb
+is of considerable value especially in preliminary design Eq. (29), for cooling liquid oxygen, it is necessary for the
+stage. Therefore, we set Q_ as zero in this work. interfacetemperatureT tobelowerthantheliquidoxygen
+amb i
+Second, note that the heat transfer rate from the gas to initial temperature, T , i.e., T >T.
+LOX,i LOX,i i
+the liquid interface can be expressed in terms of vaporiza- SubstitutingP inEq.(20)tocalculateT,Eq.(28),
+GOX,b i
+tion due to heat transfer as shown in Eq. (26) and then substituting T into the cooling requirement
+i
+(T >T) in Eq. (29) gives the cooling condition after
+Q_ gi ¼A sðh giðT g(cid:3)T iÞÞ(cid:4)m_ LOX;hh fg: ð26Þ somLO eX m,i anipi ulations
+B wy e cm aa nk rin edg uu cs ee to hf eE raq ts e. a(4 t) wa hn id ch(2 th6) e, bE uq l. k( l2 i) quw ii dth oxQ_ ya gm eb n¼ en0 -, >(cid:2) Z GOX(cid:3) (cid:2)" P sys(cid:2)eTH ref fg R(cid:6) TLT Ore Xf ;i(cid:3)1(cid:7) (cid:3)1#
+X : ð30Þ
+ergy changes as follows: Z GHe P ref
+dT
+m C LOXþA h ðT (cid:3)T Þ¼0; ð27Þ Eq. (30) indicates that the non-dimensional parameterX
+LOX p;LOX dt s li LOX i
+which is the combination of bubble characteristic parame-
+where the interface temperature T is the calculated liquid ters and bubbling system operating parameters, should be
+i
+oxygen saturation temperature based on the gaseous oxy- established to be higher than the value of the right hand
+gen partial pressure in bubbles using finite heat transfer side of Eq. (30) which can be defined as the critical
+and instantaneous diffusional mass transfer model as X(X ) for obtaining liquid oxygen cooling.
+cr
+
+===== PAGE 14 =====
+
+N.Choetal./Cryogenics46(2006)778–793 791
+Substituting X expression, Eq. (25) into Eq. (30) gives temperature helium is injected with the same gas flow rate
+the following helium temperature condition for cooling: (V_ =V ¼1:3min(cid:3)1), (4) initially saturated liquid
+He LOX
+oxygen at 3bar into which ambient temperature helium
+T He < (cid:8) b02 Aq b;H de =V fL gO (cid:9)X gi(cid:2)(cid:2) VV_ LH Oe X(cid:3) (cid:2)(cid:2) M MG HO eX(cid:3) ( 12 :388 mK in) (cid:3)1is ),in (5je )c it ne id tiaw lli yth sula br -g ce oog la es dfl lio qw uidra ote xy(V g_ eH ne= aV tL 3OX ba¼
+f h (cid:2)h
+r
+2 3
+Z into which ambient temperature helium (288K) is injected
+He
+6 Z 7 with small gas flow rate (V_ He=V LOX ¼0:8min(cid:3)1), (6) ini-
+(cid:2)6 6 (cid:6)GOX (cid:7) 7 7þT satðP LOXÞ: tiallysub-cooledliquidoxygenat3barintowhichambient
+4P sys(cid:2)eTH ref fg R TLT Ore Xf ;i(cid:3)1 (cid:3)15 temperature helium (288K) is injected with the increased
+P ref gas flow rate (V_ He=V LOX ¼1:2min(cid:3)1), (7) initially sub-
+ðf0 ¼V_ =V (cid:2)1sÞ ð31Þ cooled liquid oxygen (98K) at 3.5bar into which low
+b He b;d
+temperature helium (114K) is injected (with the gas flow
+Eq. (31) should be solved iteratively as q He, A s, h gi, Z He rate V_ He=V LOX ¼1:3min(cid:3)1), (8) initially sub-cooled liquid
+depend on injected helium temperature T He. Since oxygen (91K) at 3.5bar into which low temperature
+V_ He=V LOX usually has a limited range of variation among helium (114K) is injected (with the gas flow rate
+systems, Eq. (31) can be used to calculate the maximum V_ =V ¼1:0min(cid:3)1).Table4alsoshowsthenetsurface
+He LOX
+allowableheliumtemperature(criticalheliumtemperature, area of bubbles (calculated from Eq. (11)) and the heat
+T He,crit)withthespecifiedvolumeflowrateforcoolingsub- transfer coefficients calculated from the detached bubble
+cooled pressurized liquid oxygen. analysis discussed in the previous sections for the individ-
+ual cases. For pressurized condition, the gas-to-interface
+6.5. Calculation results heattransfercoefficientincreasesduetohigherheliumden-
+sity than that of atmospheric condition.
+Table 4 shows the calculation results by the simplified Theresultsshowthatthecalculatedgaseousoxygenpar-
+modelintroducedintheprevioussections.Thecalculations tial pressures are lower than the liquid oxygen vapor pres-
+areperformedfortherepresentativetestandanalysiscases sures for the cooling conditions (cases 1, 2, 3, 4, 7, 8).
+presented in this paper. However, for the warming condition (cases 5, 6), the
+Thefollowingeightcasesareanalyzed:(1)initiallysatu- tendency is reversed. The calculation results agree with
+rated liquid oxygen at 1bar into which ambient tempera- theexperimentalobservationandtheanalyticalresultspre-
+ture helium (288K) is injected (with gas flow rate, sented in the previous chapter. Therefore, the parameter,
+V_ =V ¼1min(cid:3)1), (2) initially saturated liquid oxygen X, can be regarded as a useful guide for determining cool-
+He LOX
+at 1bar into which ambient temperature helium (288K) ing condition during preliminary design stage of helium
+is injected with the increased gas flow rate (V_ =V ¼ injection cooling system.
+He LOX
+1:3min(cid:3)1),(3)initiallysaturatedliquidoxygenat1barinto Fig. 15 shows the graphical representation of the rela-
+which low temperature helium (114K) instead of ambient tion between the parameter X and the cooling rate for
+Table4
+Calculationresultsofsimplifiedmodelforinitialinjectionstage
+Parameters CaseNo.
+1 2 3 4 5 6 7 8
+InitialLOXtemperature,T (K) 91 91 91 102 91 91 98 91
+LOX,i
+(saturated) (saturated) (saturated) (saturated) (subcooled) (subcooled) (subcooled) (subcooled)
+Systempressure,P (orP )(bar) 1 1 1 3 3 3 3.5 3.5
+sys LOX
+Injectedheliumflowrate, 1.0 1.3 1.3 1.3 0.8 1.3 1.3 1.0
+V_ He=V ðmin(cid:3)1Þ
+LOX
+Injectedheliumtemperature,T (K) 288 288 114 288 288 288 114 114
+He
+Diameterofdetachedbubble,D (m) 0.052 0.058 0.046 0.058 0.047 0.058 0.046 0.042
+b,d
+Risingvelocityofdetachedbubble, 0.529 0.558 0.501 0.558 0.506 0.558 0.474 0.474
+u (m/s)
+b
+Netsurfaceareaofbubbles,A (m2) 0.058 0.068 0.049 0.071 0.051 0.065 0.049 0.041
+s
+Gas-to-interfaceheattransfercoefficient, 30.0 29.2 23.2 49.2 52.4 50.0 39.3 43.5
+h (W/m2K)
+gi
+Liquid-to-interfaceheattransfer 2573 2561 2585 3033 1327 1345 1585 1322
+coefficient,h (W/m2K)
+li
+Molefractionratio,X 0.75 0.86 18.81 1.56 1.23 1.57 89.9 73.1
+GOXpartialpressure,P (bar) 0.57 0.54 0.05 1.16 1.34 1.17 0.039 0.047
+GOX,b
+LOXvaporpressure,P (T )(bar) 1.0 1.0 1.0 3.0 1.0 1.0 2.3 1.0
+sat LOX,i
+Interfacetemperature,T (K) 84.2 83.6 65.9 91.6 93.4 91.7 64.3 65.5
+i
+Coolingrate,DT /Dt(K/s) (cid:3)0.0078 (cid:3)0.0098 (cid:3)0.046 (cid:3)0.018 0.0018 0.0013 (cid:3)0.038 (cid:3)0.021
+LOX
+
+===== PAGE 15 =====
+
+792 N.Choetal./Cryogenics46(2006)778–793
+5 300
+case 5
+0 case 6 Initiallysaturated LOX 280 )K(
+Initiallysubcooled LOX
+-5 case 1 260 000,1 erutarepmet
+-10 case 2 288 K helium injection 240
+-15 x
+220 )s/K(
+-20 case 4 case 8
+200 muileh
+-25 etar
+180 Psys =2.5 bar
+-30
+160 Psys =3 bar gnilooC lacitirC
+-35 1 (s1 a4 uK h tee dliu Lm i Xn j ae tc 1tio bn case 7 Psys =3.5 bar
+t ra O ar) 140
+-40
+-45 case 3 1 (s1 u4 b K co h oe leli du m LO in Xje ac tt i 3o n bar) 120 P Ps sy ys s = =44 . 5b a br ar
+100
+-50
+0 20 40 60 80 100
+90 91 92 93 94 95 96
+X parameter
+Initial LOX temperature (K)
+Fig. 15. Graphical representation of the relation between X parameter
+Fig. 17. Critical helium temperature with initial LOX temperature
+andcoolingrate.
+variationunderpressurizedconditions.
+the cases mentioned above. For ambient temperature oxygen, with liquid oxygen initial temperature variation
+helium (288K) injection, with similar X value, cooling or using Eq. (30). As initial liquid oxygen temperature
+warming occurs according to the liquid oxygen initial con- increasesandsystempressuredecreases,X valuedecreases.
+cr
+dition: sub-cooled or saturated. X,whichisthecombinationofrelevantoperatingparame-
+Forlow temperaturehelium(114K)injection cases,the ters,shouldbeestablishedashighervaluethanX forcool-
+cr
+X parameters are large mainly due to the decrease of heat ingliquidoxygen.
+induced vaporization and the increased helium density. Fig. 17 shows the calculation results for critical helium
+ThishigherXvaluesubsequentlyincreasesthecoolingrate temperature, defined as the possible maximum injected
+of liquid oxygen. helium temperature for cooling liquid oxygen, with liquid
+Inaddition,amongthelowtemperaturehelium(114K) oxygen initial temperature variation using Eq. (31). It is
+injection cases, the case 7 and the case 8 (sub-cooled at assumed that helium is injected with the specified gas flow
+3.5bar)showamuchlowersensitivitywithrespecttocool- rate ðV_ =V ¼1min(cid:3)1). As the system pressure
+He LOX
+ing rate than the case 3 (saturated at atmospheric system increases, the critical injected helium temperature is
+pressure).Thatismainlybecauseforthepressurizedcases, lowered and as the initial liquid oxygen temperature
+boiling is suppressed, therefore, liquid-to-interface boiling increases,thecriticalinjectedheliumtemperatureincreases.
+heattransfercoefficienth issmallerthanatmosphericcase Forinitialliquidoxygentemperatureshigherthanthosein
+li
+as shown in Table 4. the range as shown in Fig. 17, room-temperature helium
+Fig.16showsthecalculationresultsforcriticalXvalue, gas without precooling is just sufficient for cooling liquid
+X , defined as the minimum value of X for cooling liquid oxygen. Injected helium temperature should be set to be
+cr
+lowerthanthecriticalheliumtemperaturetocausecooling
+effect.
+4
+Psys =2.5 bar
+Psys =3 bar
+7. Summary
+3 Psys =3.5 bar
+Psys =4 bar Characteristics of helium injection cooling into liquid
+Psys =4.5 bar oxygen under pressurized condition are thoroughly exam-
+tircX
+2 ined by theoretical, analytical and experimental methods.
+The ‘finite heat transfer and instantaneous diffusion mass
+transfer’ model is applied for the analysis. The typical
+characteristic of helium injection under pressurized condi-
+1
+tion compared to atmospheric condition is that the liquid
+oxygen is usually sub-cooled and relatively higher helium
+mass flow is supplied with specific volume flow rate. For
+90 91 92 93 94 95 96 97 98 99100101102103104105106107 initially saturated liquid oxygen, cooling effect is achieved
+Initial LOX temperature (K) regardless of the injected helium temperature and the
+flowrate evenunderpressurization condition.For initially
+Fig. 16. Critical X parameter with initial LOX temperature variation
+underpressurizedconditions. sub-cooled liquid oxygen, the developed gaseous oxygen
+
+===== PAGE 16 =====
+
+N.Choetal./Cryogenics46(2006)778–793 793
+partial pressure may exceed the corresponding liquid oxy- [2] William RJ. Helium pressurant requirements for liquid-hydrogen
+gen saturation pressure which leads to the failure of cool- expulsionusingsubmergedgasinjection.NASATND-4102,August
+1967.
+ing. Lowering injected helium temperature is an effective
+[3] LarsenPS,ClarkJA.Coolingofcryogenicliquidsbygasinjection.
+means for lowering gaseous oxygen partial pressure in
+AdvCryogEng1962;8:507–20.
+helium bubble. [4] SchmidtAF. Experimental investigation of liquid hydrogen cooling
+Thegaseousoxygenpartialpressuredevelopedininitial byheliumgasinjection.AdvCryoEng1962;8:521.
+injectionstageisthemainparameterfordeterminingcool- [5] Cleary NL, Holt KA, Flachbart RH. Simplified liquid oxygen
+propellant conditioning concepts. NASA technical memorandum
+ing condition. A simplified model to estimate gaseous
+TM-108482,March1995.
+oxygen partial pressure and subsequent cooling rate atini-
+[6] ChoN,KwonO,KimY,JeongS.Investigationofheliuminjection
+tialheliuminjectionstageisdeveloped.Themodelassumes coolingtoliquidoxygenpropellantchamber.Cryogenics2006;46:132.
+that the gaseous oxygen partial pressure is initially devel- [7] ReidRobertCet al.Thepropertiesofgasesandliquids.4thed. New
+oped only by heat transfer between helium gas and liquid York: McGraw-Hill;1987.
+[8] Cullimore BA, Ring SG, Johnson DA. SINDA/FLUINT user’s
+oxygen and then liquid oxygen vaporization due to
+manual.Version4.7,November2004.
+diffusion occurs due to the difference of gaseous oxygen
+[9] Wallis GB. Some hydrodynamic aspects of two-phase flow and
+partial pressure. A non-dimensional parameter represent- boiling. International development in heat transfer, 2. New
+ing the partial pressure ratio is suggested and applied for York: AmericanSocietyofMechanicalEngineers;1961.p.319.
+several cases to identify the cooling regime. Critical value [10] PanzarellaCH,KassemiM.Onthevalidityofpurelythermodynamic
+descriptions of two-phase cryogenic fluid storage. J fluid mech
+of the non-dimensional parameters and injected helium
+2003;484:41.
+temperatures are also investigated. The proposed model
+[11] WallisGB.One-dimensionaltwo-phaseflow. NewYork: McGraw-
+successfully reflects cooling or no cooling results obtained Hill;1969.
+from theexperimental data and it is considered as a useful [12] Haberman WL, Morton RK. An experimental investigation of the
+guide for determining the cooling condition during preli- drag and shape of air bubbles rising in various liquids. David W.
+TayorModelBasinReport1953:802.
+minary design stage of effective helium injection system.
+[13] Painmanakul P, Loubiere K, Hebrard G, Buffiere P. Study of
+differentmembranespargersusedinwastewater.ChemEngProcess
+2004;43:1347–59.
+References [14] Kreith F. Thermal design of high altitude balloons and instrument
+packages.HeatTransf(TransASME)1976;98:452.
+[1] Han VN. Ground pre-pressurization by helium bubbling for cryo-
+genicupperstages.AIAA2001:3833.

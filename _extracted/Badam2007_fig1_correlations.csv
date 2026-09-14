@@ -1,0 +1,9 @@
+# Badam, Buwa & Durst, Can. J. Chem. Eng. 85 (2007) 257-267, Fig. 1
+# Predicted bubble volume vs gas flow, Table 1 correlations. Endpoints read from the
+# printed figure (uncertainty about +/-0.05 cm3). This tool evaluates the same equations.
+Q_cm3_min,davidson_schueler_cm3,davidson_harrison_cm3,kumar_kuloor_cm3,gaddis_vogelpohl_cm3,jamialahmadi_cm3
+0,0.00,0.00,0.00,0.04,0.05
+1000,0.65,0.53,0.46,0.53,0.41
+2000,1.50,1.23,1.05,1.20,0.80
+3000,2.42,2.00,1.71,1.93,1.18
+4000,3.40,2.80,2.42,2.72,1.55

@@ -1,0 +1,70 @@
+# source_id: Baldwin2023_nodal_submerged_helium_injection
+# source: Baldwin, Majumdar & LeClair, AIAA 2023-0847 (NTRS 20220008221), Tables 3-10
+# original_data_from: Lacovic, R. F., "Comparison of experimental and calculated helium
+#   requirements for pressurization of a Centaur liquid oxygen tank," NASA E-5539 (1970);
+#   and Johnson, W. R., "Helium pressurant requirements for liquid-hydrogen expulsion using
+#   submerged gas injection" (1967).
+# apparatus: Centaur test vehicle LOX tank, High Energy Rocket Research Facility, NASA Lewis.
+#   9.78 m^3 stainless tank: two spheroidal halves (major 3.02 m, minor 2.2 m) separated by a
+#   0.11 m cylindrical section; walls above the cylindrical section thermally insulated;
+#   5.9 kW heat leak into the bottom half; submerged injector inlet below 91.5 % of tank volume;
+#   axial platinum RTD array. No experimental uncertainty reported in the source.
+# extraction: transcribed from typeset tables -> exact.
+# mode: ramp = pre-pressurization ramp + hold; direct = direct ullage injection with draining;
+#       submerged = submerged injection with draining.
+# htc_case: default = stock GFSSP ullage-to-wall and ullage-to-liquid natural-convection
+#   coefficients; tripled = those coefficients multiplied by 3 to emulate a forced-convection
+#   component. Baldwin's finding: default UNDERPREDICTS He usage in every case, so the default
+#   model is a lower bound; tripling brings most cases inside 30 %.
+# pct_diff = (m_He_sim - m_He_exp)/m_He_exp * 100 (paper Eq. 15).
+# units: volumes m^3, pressures kPa, times s, drain/outflow kg/s, heating kW, temps K, mass kg
+mode,case,htc_case,fill_volume_m3,ullage_volume_m3,ullage_pressure_initial_kPa,ullage_pressure_target_kPa,ramp_time_s,hold_time_s,drain_time_s,drain_rate_kg_per_s,ambient_heating_kW,T_He_inlet_avg_K,m_He_exp_kg,m_He_sim_kg,pct_diff,m_LOX_evaporated_sim_kg
+ramp,1A,default,1.18,8.6,173,263,28,60,,3.6,5.9,289,2.11,1.70,-19.6,0.48
+ramp,1B,default,1.18,8.6,173,263,39,60,,3.6,5.9,283,2.05,1.73,-15.8,0.53
+ramp,1C,default,1.18,8.6,173,263,59,60,,3.6,5.9,277,2.09,1.77,-15.4,0.62
+ramp,2A,default,3.98,5.8,173,263,25,60,,0.0,5.9,283,1.52,1.21,-20.6,0.55
+ramp,2B,default,3.98,5.8,173,263,25,60,,0.0,5.9,286,1.54,1.21,-21.6,0.55
+ramp,3A,default,4.08,5.7,173,263,33,60,,3.6,5.9,289,1.81,1.03,-43.2,0.52
+ramp,3B,default,3.98,5.8,173,263,25,60,,3.6,5.9,289,1.84,1.02,-44.8,0.48
+ramp,4A,default,4.08,5.7,173,310,31,60,,3.6,5.9,289,2.42,1.41,-41.6,0.78
+ramp,4B,default,4.08,5.7,173,310,45,60,,3.6,5.9,284,2.43,1.45,-40.3,0.86
+ramp,4C,default,4.08,5.7,173,310,75,60,,3.6,5.9,277,2.43,1.55,-36.1,1.01
+ramp,5A,default,6.88,2.9,173,261,10,60,,3.6,5.9,289,1.07,0.78,-27.5,0.29
+ramp,5B,default,6.88,2.9,173,261,14,60,,3.6,5.9,292,1.07,0.76,-29.4,0.32
+ramp,6A,default,9.48,0.3,173,259,1,15,,3.6,5.9,292,0.14,0.09,-38.8,0.01
+ramp,1A,tripled,1.18,8.6,173,263,28,60,,3.6,5.9,289,2.11,2.63,24.5,1.09
+ramp,1B,tripled,1.18,8.6,173,263,39,60,,3.6,5.9,283,2.05,2.67,30.3,1.15
+ramp,1C,tripled,1.18,8.6,173,263,59,60,,3.6,5.9,277,2.09,2.85,36.6,1.32
+ramp,2A,tripled,3.98,5.8,173,263,25,60,,0.0,5.9,283,1.52,1.74,14.6,1.22
+ramp,2B,tripled,3.98,5.8,173,263,25,60,,0.0,5.9,286,1.54,1.75,13.7,1.24
+ramp,3A,tripled,4.08,5.7,173,263,33,60,,3.6,5.9,289,1.81,1.46,-19.4,1.11
+ramp,3B,tripled,3.98,5.8,173,263,25,60,,3.6,5.9,289,1.84,1.41,-23.2,1.04
+ramp,4A,tripled,4.08,5.7,173,310,31,60,,3.6,5.9,289,2.42,2.00,-17.2,1.67
+ramp,4B,tripled,4.08,5.7,173,310,45,60,,3.6,5.9,284,2.43,2.07,-14.7,1.80
+ramp,4C,tripled,4.08,5.7,173,310,75,60,,3.6,5.9,277,2.43,2.20,-9.6,2.00
+ramp,5A,tripled,6.88,2.9,173,261,10,60,,3.6,5.9,289,1.07,1.00,-6.3,0.65
+ramp,5B,tripled,6.88,2.9,173,261,14,60,,3.6,5.9,292,1.07,0.99,-7.1,0.70
+ramp,6A,tripled,9.48,0.3,173,259,1,15,,3.6,5.9,292,0.14,0.10,-28.2,0.03
+direct,7,default,9.48,0.3,,244,,,415,25.6,5.9,278,8.78,7.15,-18.6,3.10
+direct,8,default,9.48,0.3,,244,,,415,25.6,5.9,279,8.64,7.14,-17.4,3.12
+direct,9,default,9.48,0.3,,276,,,415,25.6,5.9,275,9.57,8.11,-15.3,3.33
+direct,10,default,9.48,0.3,,244,,,415,25.6,5.9,142,10.37,9.58,-7.6,1.16
+direct,11A,default,9.48,0.3,,244,,,243,25.6,5.9,293,4.89,4.11,-16.0,2.04
+direct,12A,default,9.48,0.3,,244,,,368,25.6,5.9,290,7.10,6.24,-12.1,3.14
+direct,13A,default,9.48,0.3,,244,,,120,25.6,5.9,292,2.94,1.94,-34.1,0.74
+direct,14A,default,9.48,0.3,,276,,,242,25.6,5.9,291,5.11,4.60,-10.0,2.18
+direct,7,tripled,9.48,0.3,,244,,,415,25.6,5.9,278,8.78,8.29,-5.6,5.10
+direct,8,tripled,9.48,0.3,,244,,,415,25.6,5.9,279,8.64,8.28,-4.3,5.14
+direct,9,tripled,9.48,0.3,,276,,,415,25.6,5.9,275,9.57,9.37,-2.1,5.55
+direct,10,tripled,9.48,0.3,,244,,,415,25.6,5.9,142,10.37,10.24,-1.2,1.86
+direct,11A,tripled,9.48,0.3,,244,,,243,25.6,5.9,293,4.89,4.80,-2.0,3.46
+direct,12A,tripled,9.48,0.3,,244,,,368,25.6,5.9,290,7.10,7.25,2.1,5.18
+direct,13A,tripled,9.48,0.3,,244,,,120,25.6,5.9,292,2.94,2.29,-22.1,1.40
+direct,14A,tripled,9.48,0.3,,276,,,242,25.6,5.9,291,5.11,5.37,5.1,3.75
+submerged,15,default,9.48,0.3,173,244,,,415,25.6,5.9,175,4.38,3.74,-14.7,57.8
+submerged,16,default,9.48,0.3,173,244,,,415,25.6,5.9,291,4.00,3.53,-11.8,58.3
+submerged,17,default,9.48,0.3,173,276,,,415,25.6,5.9,289,5.50,4.89,-11.2,58.5
+submerged,18,default,9.48,0.3,173,276,,,415,25.6,5.9,161,6.45,5.20,-19.3,57.9
+submerged,19A,default,9.48,0.3,173,244,,,243,25.6,5.9,195,2.65,2.17,-18.3,40.2
+submerged,20A,default,9.48,0.3,173,244,,,243,25.6,5.9,289,2.55,2.15,-15.7,40.3
+submerged,21A,default,9.48,0.3,173,222,,,243,25.6,5.9,289,2.40,1.53,-36.4,40.1
